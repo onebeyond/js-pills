@@ -5,6 +5,7 @@
     <title>JS Pills</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/showdown/<version tag>/showdown.min.js"></script>
   </head>
   <body>
     <span
@@ -33,7 +34,6 @@
       </div>
     </div>
     <div id="content"></div>
-    <iframe id="frame" height="500px" width="100%"></iframe>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
@@ -43,13 +43,17 @@
       <button onclick="pause()">Pause</button>
       <button onclick="reset()">Reset</button>
     </div>
+
     <script type="text/javascript">
-      $("#content").load("./advanced/merging-arrays/README.md", function () {
+      $().load("./advanced/merging-arrays/README.md", function (response) {
         console.log("Load was performed.");
         if (status == "error") {
           var msg = "Sorry but there was an error: ";
           console.log(msg + xhr.status + " " + xhr.statusText);
         }
+        var converter = new showdown.Converter(),
+          html = converter.makeHtml(response);
+          console.log(html)
       });
     </script>
     <script src="./index.js"></script>
