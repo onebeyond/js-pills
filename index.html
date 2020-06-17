@@ -53,7 +53,7 @@
         }
         var converter = new showdown.Converter(),
           html = converter.makeHtml(response);
-          console.log(html)
+          document.getElementById('content').innerHTML = html
       });
     </script>
     <script src="./index.js"></script>
