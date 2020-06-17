@@ -3,58 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <title>JS Pills</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <span
+      class="burger"
+      style="font-size: 30px; cursor: pointer;"
+      onclick="openNav()"
+      >&#9776;</span
+    >
+    <div class="logo">
+      <img src="./assets/GS_logo.svg" alt="guidesmiths" />
+      <h1>JS Pills</h1>
+    </div>
+    <div class="links">
+      <div class="advanced">
+        <h3>Advanced:</h3>
+        <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
+          >merging-arrays</a
+        >
+      </div>
+      <div class="basic">
+        <h3>Medium:</h3>
+      </div>
+      <div class="basic">
+        <h3>Basic:</h3>
+        <a onclick="setIfFrameURL('./basic/reduce/README.md')">reduce</a>
+      </div>
+    </div>
     <div id="content"></div>
-    <div id="time">02:30</div>
-    <button onclick="play()">Start</button>
-    <button onclick="pause()">Pause</button>
-    <button onclick="reset()">Reset</button>
-    <h3>Advanced:</h3>
-    <a href="./advanced/merging-arrays/README.html">merging-arrays</a>
-    <object data="README.html" type="text/html"></object>
-    <script>
-      let interval,
-        isPaused = false,
-        timer = 60 * 2 + 30,
-        minutes,
-        seconds,
-        isRunning = false,
-        display = document.querySelector("#time");
-      function startTimer(display) {
-        isRunning = true;
-        interval = setInterval(function () {
-          minutes = parseInt(timer / 60, 10);
-          seconds = parseInt(timer % 60, 10);
-
-          minutes = minutes < 10 ? "0" + minutes : minutes;
-          seconds = seconds < 10 ? "0" + seconds : seconds;
-
-          display.textContent = minutes + ":" + seconds;
-
-          if (--timer < 0) {
-            timer = 0;
-          }
-        }, 1000);
-      }
-
-      function play() {
-        isPause = false;
-        if (isRunning) return;
-        startTimer(display);
-      }
-
-      function pause() {
-        isPaused = !isPaused;
-        isRunning = false;
-        clearInterval(interval);
-      }
-
-      function reset() {
-        isRunning = false;
-        timer = 60 * 2 + 30;
-        display.textContent = "02:30";
-      }
+    <iframe id="frame" height="500px" width="100%"></iframe>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div id="time">02:30</div>
+      <button onclick="play()">Start</button>
+      <button onclick="pause()">Pause</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <script type="text/javascript">
+      $("#content").load("./advanced/merging-arrays/README.md", function () {
+        console.log("Load was performed.");
+        if (status == "error") {
+          var msg = "Sorry but there was an error: ";
+          console.log(msg + xhr.status + " " + xhr.statusText);
+        }
+      });
     </script>
+    <script src="./index.js"></script>
   </body>
 </html>
