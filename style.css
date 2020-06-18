@@ -1,10 +1,14 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Roboto, sans-serif;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
 }
 
 a {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .burger {
@@ -19,11 +23,15 @@ a {
 #content {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   padding: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 8px;
+  box-shadow: inset;
+  -webkit-box-shadow: 9px 11px 46px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 11px 46px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 11px 46px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
@@ -38,6 +46,7 @@ a {
     #37ab99
   );
   position: relative;
+  height: 100vh;
 }
 
 .logo > img {
@@ -53,7 +62,6 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #40ad77;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -89,7 +97,13 @@ a {
 .links {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+}
+
+.advanced,
+.pro,
+.basic {
+  display: flex;
+  flex-direction: column;
 }
 
 #secret {
@@ -112,21 +126,13 @@ pre {
   background-color: #334150;
   padding: 5px;
   border-radius: 0.3em;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-}
-
-footer {
-  text-align: center;
+  color: red;
 }
 
 .carlos-comic {
   display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 .speech-bubble {
@@ -245,11 +251,23 @@ main {
   position: fixed;
   height: 100%;
   top: 0;
-  background-color: #40ad77;
+  background-image: linear-gradient(
+    to right bottom,
+    #37ab99,
+    #00858e,
+    #005f7a,
+    #003b5c,
+    #051937
+  );
 }
 
 .fixed #time {
   margin-top: 40px;
+}
+
+.pills-sections {
+  height: 100vh;
+  position: relative;
 }
 
 @media screen and (max-height: 450px) {

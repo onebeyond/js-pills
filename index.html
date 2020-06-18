@@ -23,31 +23,37 @@
           <div class="speech-bubble">Te has tomado tu pildora?</div>
         </div>
       </div>
-      <div class="links">
-        <div class="advanced">
-          <h3>Advanced</h3>
-          <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
-            >Merging-arrays</a
-          >
+      <section class="pills-sections">
+        <div class="links">
+          <div class="advanced">
+            <h3>Advanced</h3>
+            <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
+              >Merging-arrays</a
+            >
+            <a onclick="setIfFrameURL('./advanced/3-ways-to-deduplicate-arrays/README.md')"
+              >3 ways to deduplicate arrays</a
+            >
+          </div>
+          <div class="pro">
+            <h3>Pro</h3>
+            <a onclick="setIfFrameURL('./basic/reduce/README.md')">Array.prototype.every</a>
+            <a onclick="setIfFrameURL('./basic/map/README.md')">map</a>
+            <a onclick="setIfFrameURL('./basic/converting/README.md')">Converting to number using + operator</a>
+            <a onclick="setIfFrameURL('./basic/console-methods/README.md')">Console methods </a>
+          </div>
+          <div class="basic">
+            <h3>Basic</h3>
+            <a onclick="setIfFrameURL('./basic/reduce/README.md')">Reduce</a>
+          </div>
         </div>
-        <div class="basic">
-          <h3>Pro</h3>
-          <a onclick="setIfFrameURL('./basic/reduce/README.md')">·</a>
+        <div id="secret"></div>
+        <div id="content">
+          <h1 style="text-align: center;">
+            Bienvenido en la pagina de JS pills de Guidesmiths, para empezar
+            selecciona una pildora
+          </h1>
         </div>
-        <div class="basic">
-          <h3>Basic</h3>
-          <a onclick="setIfFrameURL('./basic/reduce/README.md')">Reduce</a>
-        </div>
-      </div>
-      <div id="secret"></div>
-      <div id="content">
-        <h1 style="text-align: center;">
-          Bienvenido en la pagina de JS pills de Guidesmiths, para empezar
-          selecciona una pildora
-        </h1>
-      </div>
-      <footer>©Guidesmiths 2020</footer>
-      <script src="./index.js"></script>
+      </section>
     </main>
     <div id="mySidenav" class="sidenav">
       <div class="fixed">
@@ -73,5 +79,6 @@
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
