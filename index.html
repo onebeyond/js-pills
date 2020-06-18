@@ -45,16 +45,20 @@
     </div>
 
     <script type="text/javascript">
-      $('#content').load("./advanced/merging-arrays/README.md", function (response) {
-        console.log("Load was performed.");
-        if (status == "error") {
-          var msg = "Sorry but there was an error: ";
-          console.log(msg + xhr.status + " " + xhr.statusText);
-        }
-        var converter = new showdown.Converter(),
-          html = converter.makeHtml(response);
-          document.getElementById('content').innerHTML = html
-      });
+      function setIfFrameURL(url) {
+        $("#content").load(url, function (
+          response
+        ) {
+          console.log("Load was performed.");
+          if (status == "error") {
+            var msg = "Sorry but there was an error: ";
+            console.log(msg + xhr.status + " " + xhr.statusText);
+          }
+          var converter = new showdown.Converter(),
+            html = converter.makeHtml(response);
+          document.getElementById("content").innerHTML = html;
+        });
+      }
     </script>
     <script src="./index.js"></script>
   </body>
