@@ -62,7 +62,7 @@ function setIfFrameURL(url) {
     document.getElementById("secret").innerHTML = response.includes(
       "Merging arrays"
     )
-      ? `<div class="carlos-comic">
+      ? `<div class="felipe-comic">
       <img id="felipe-image" src="./assets/Felipe.png"></img>
       <div class="speech-bubble-felipe">Poco se habla de mi pill</div>
       </div>`

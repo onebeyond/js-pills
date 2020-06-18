@@ -2,8 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>JS Pills</title>
+    <title>JS Pills - Guidesmiths</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://images.ctfassets.net/5gv1edeicqfs/48EM0LU3Z6gWkQCcCaeoq2/704ea273b5d50d09ff450a5ceaa74631/guidesmiths-logo.png"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
   </head>
@@ -20,13 +25,17 @@
         <h1>JS Pills</h1>
         <div class="carlos-comic">
           <img src="./assets/Carlos.png" alt="guidesmiths" />
-          <div class="speech-bubble">Te has tomado tu pildora?</div>
+          <div class="speech-bubble">
+            🇪🇸 Te has tomado tu pildora?
+            <br />
+            🇬🇧 Have you taken your pill ?
+          </div>
         </div>
       </div>
       <section class="pills-sections">
         <div class="links">
           <div class="advanced">
-            <h3>Advanced</h3>
+            <h3>Advanced 💊</h3>
             <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
               >Merging-arrays</a
             >
@@ -43,13 +52,20 @@
             >
           </div>
           <div class="pro">
-            <h3>Pro</h3>
-            <a onclick="setIfFrameURL('./basic/es6-interpolation/README.md')">ES6 Interpolation</a>
-            <a onclick="setIfFrameURL('./basic/cache-decorator/README.md')">Cache decorator</a>
-            <a onclick="setIfFrameURL('./basic/audit-proxy-decorator/README.md')">Audit proxy decorator</a>
+            <h3>Pro 💊</h3>
+            <a onclick="setIfFrameURL('./basic/es6-interpolation/README.md')"
+              >ES6 Interpolation</a
+            >
+            <a onclick="setIfFrameURL('./basic/cache-decorator/README.md')"
+              >Cache decorator</a
+            >
+            <a
+              onclick="setIfFrameURL('./basic/audit-proxy-decorator/README.md')"
+              >Audit proxy decorator</a
+            >
           </div>
           <div class="basic">
-            <h3>Basic</h3>
+            <h3>Basic 💊</h3>
             <a onclick="setIfFrameURL('./basic/reduce/README.md')">Reduce</a>
             <a onclick="setIfFrameURL('./basic/reduce/README.md')"
               >Array.prototype.every</a
@@ -65,8 +81,7 @@
         <div id="secret"></div>
         <div id="content">
           <h1 style="text-align: center;">
-            Bienvenido en la pagina de JS pills de Guidesmiths, para empezar
-            selecciona una pildora
+            Welcome to the Guidesmiths JS pills page, select a pill to start
           </h1>
         </div>
       </section>
@@ -82,7 +97,7 @@
         <button onclick="reset()">Reset</button>
         <div class="javi-comic">
           <div class="speech-bubble">
-            Uff tengo un mal de cabeza impresionante
+            Let's start the party!! 🎉
           </div>
         </div>
         <div class="pill-animation">

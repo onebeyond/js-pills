@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   display: flex;
+  background-color: #d4d4d442;
 }
 
 a {
@@ -18,9 +19,23 @@ a {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.basic, .pro, .advanced {
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.22);
+  border: 2px solid #eee;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: white;
+
 }
 
 #content {
+  background-color: white;
   width: 80%;
   margin: 0 auto;
   border: 2px solid #eee;
@@ -29,9 +44,9 @@ a {
   margin-bottom: 40px;
   border-radius: 8px;
   box-shadow: inset;
-  -webkit-box-shadow: 9px 11px 46px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 9px 11px 46px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 9px 11px 46px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.22);
 }
 
 .logo {
@@ -52,6 +67,10 @@ a {
 .logo > img {
   width: 50%;
   margin-top: 40px;
+}
+
+.logo > h1 {
+  color: white;
 }
 
 .sidenav {
@@ -95,15 +114,19 @@ a {
 }
 
 .links {
+  width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .advanced,
 .pro,
 .basic {
+  min-width: 25%;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 #secret {
@@ -133,6 +156,14 @@ pre {
   display: flex;
   position: absolute;
   bottom: 0;
+}
+
+.felipe-comic {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
 }
 
 .speech-bubble {
@@ -215,6 +246,7 @@ button {
   border-radius: 8px;
   padding: 20px;
   height: 100%;
+  margin-top: 50px;
 }
 
 .speech-bubble-felipe:after {
@@ -251,6 +283,7 @@ main {
   position: fixed;
   height: 100%;
   top: 0;
+  box-shadow: 1px 1px 7px 3px #21212170;
   background-image: linear-gradient(
     to right bottom,
     #37ab99,
