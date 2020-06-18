@@ -8,58 +8,70 @@
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
   </head>
   <body>
-    <span
-      class="burger"
-      style="font-size: 30px; cursor: pointer;"
-      onclick="openNav()"
-      >&#9776;</span
-    >
-    <div class="logo">
-      <img src="./assets/GS_logo.svg" alt="guidesmiths" />
-      <h1>JS Pills</h1>
-    </div>
-    <div class="links">
-      <div class="advanced">
-        <h3>Advanced:</h3>
-        <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
-          >merging-arrays</a
-        >
-      </div>
-      <div class="basic">
-        <h3>Medium:</h3>
-      </div>
-      <div class="basic">
-        <h3>Basic:</h3>
-        <a onclick="setIfFrameURL('./basic/reduce/README.md')">reduce</a>
-      </div>
-    </div>
-    <div id="content"></div>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
+    <main id="main">
+      <span
+        class="burger"
+        style="font-size: 30px; cursor: pointer;"
+        onclick="openNav()"
+        >&#9776;</span
       >
-      <div id="time">02:30</div>
-      <button onclick="play()">Start</button>
-      <button onclick="pause()">Pause</button>
-      <button onclick="reset()">Reset</button>
+      <div class="logo">
+        <img src="./assets/GS_logo.svg" alt="guidesmiths" />
+        <h1>JS Pills</h1>
+        <div class="carlos-comic">
+          <img src="./assets/Carlos.png" alt="guidesmiths" />
+          <div class="speech-bubble">Te has tomado tu pildora?</div>
+        </div>
+      </div>
+      <div class="links">
+        <div class="advanced">
+          <h3>Advanced</h3>
+          <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
+            >Merging-arrays</a
+          >
+        </div>
+        <div class="basic">
+          <h3>Pro</h3>
+          <a onclick="setIfFrameURL('./basic/reduce/README.md')">·</a>
+        </div>
+        <div class="basic">
+          <h3>Basic</h3>
+          <a onclick="setIfFrameURL('./basic/reduce/README.md')">Reduce</a>
+        </div>
+      </div>
+      <div id="secret"></div>
+      <div id="content">
+        <h1 style="text-align: center;">
+          Bienvenido en la pagina de JS pills de Guidesmiths, para empezar
+          selecciona una pildora
+        </h1>
+      </div>
+      <footer>©Guidesmiths 2020</footer>
+      <script src="./index.js"></script>
+    </main>
+    <div id="mySidenav" class="sidenav">
+      <div class="fixed">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div id="time">02:30</div>
+        <button onclick="play()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="reset()">Reset</button>
+        <div class="javi-comic">
+          <div class="speech-bubble">
+            Uff tengo un mal de cabeza impresionante
+          </div>
+        </div>
+        <div class="pill-animation">
+          <img src="./assets/Javi.png" alt="guidesmiths" id="javi" />
+          <div id="inner-orbit">
+            <div class="inner-orbit-pill">
+              <img src="./assets/ibuprofeno.png" alt="guidesmiths" id="javi" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script type="text/javascript">
-      function setIfFrameURL(url) {
-        $("#content").load(url, function (
-          response
-        ) {
-          console.log("Load was performed.");
-          if (status == "error") {
-            var msg = "Sorry but there was an error: ";
-            console.log(msg + xhr.status + " " + xhr.statusText);
-          }
-          var converter = new showdown.Converter(),
-            html = converter.makeHtml(response);
-          document.getElementById("content").innerHTML = html;
-        });
-      }
-    </script>
-    <script src="./index.js"></script>
   </body>
 </html>

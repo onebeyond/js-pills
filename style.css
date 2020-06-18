@@ -8,43 +8,63 @@ a {
 }
 
 .burger {
-  font-size: 30px;
   cursor: pointer;
   position: fixed;
   z-index: 1;
-  right: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#content {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
 }
 
 .logo {
-  padding: 50px 0 10px;
   margin-bottom: 120px;
   text-align: center;
-  background: #00ab99;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #003b5c,
+    #005f7a,
+    #00858e,
+    #37ab99
+  );
   position: relative;
 }
 
 .logo > img {
   width: 50%;
+  margin-top: 40px;
 }
 
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #565656;
+  bottom: 0;
+  background-color: #40ad77;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  text-align: center;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
@@ -63,6 +83,7 @@ a {
 
 #time {
   color: white;
+  font-size: 4rem;
 }
 
 .links {
@@ -71,8 +92,164 @@ a {
   align-items: center;
 }
 
-#frame {
-  margin: 60px 20px;
+#secret {
+  display: none;
+}
+
+code {
+  background-color: #334150;
+  color: #f8f8f2;
+  border-radius: 0.3rem;
+  padding: 4px 5px 5px;
+  white-space: nowrap;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+pre {
+  background-color: #334150;
+  padding: 5px;
+  border-radius: 0.3em;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+}
+
+footer {
+  text-align: center;
+}
+
+.carlos-comic {
+  display: flex;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #fff;
+  border-radius: 0.4em;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+button {
+  background-color: white;
+  border: 3px solid #4caf50;
+  color: #4caf50;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease, color 1s ease;
+  cursor: pointer;
+  box-shadow: 10px 10px rgba(77, 77, 77, 0.5);
+}
+
+#javi {
+  width: 100%;
+}
+
+.javi-comic {
+  margin-top: 40px;
+}
+
+.javi-comic .speech-bubble {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pill-animation {
+  position: relative;
+}
+
+#inner-orbit {
+  margin: 0 auto;
+  margin-top: 75px;
+  width: 100%;
+  height: 150px;
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+  position: absolute;
+  top: 0;
+}
+
+.inner-orbit-pill {
+  position: absolute;
+  top: 25px;
+  left: 17px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-image: url("./assets/ibuprofeno.png");
+}
+
+.speech-bubble-felipe {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+}
+
+.speech-bubble-felipe:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #000;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+main {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.fixed {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  background-color: #40ad77;
+}
+
+.fixed #time {
+  margin-top: 40px;
 }
 
 @media screen and (max-height: 450px) {
