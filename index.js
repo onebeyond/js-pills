@@ -64,10 +64,10 @@ function setIfFrameURL(url) {
     )
       ? `<div class="felipe-comic">
       <img id="felipe-image" src="./assets/Felipe.png"></img>
-      <div class="speech-bubble-felipe">Poco se habla de mi pill</div>
+      <div class="speech-bubble-felipe">Poco se habla del merging arrays</div>
       </div>`
       : ``;
-    var converter = new showdown.Converter(),
+    var converter = new showdown.Converter({ tables: true }),
       html = converter.makeHtml(response);
     document.getElementById("content").innerHTML = html;
   });

@@ -23,7 +23,9 @@ a {
   -webkit-text-stroke: 1px black;
 }
 
-.basic, .pro, .advanced {
+.basic,
+.pro,
+.advanced {
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.22);
   border: 2px solid #eee;
   padding: 20px;
@@ -31,7 +33,6 @@ a {
   margin-bottom: 40px;
   border-radius: 8px;
   background-color: white;
-
 }
 
 #content {
@@ -303,11 +304,33 @@ main {
   position: relative;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+body th,
+body td {
+  padding: 20px;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #c6cbd1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
