@@ -49,10 +49,6 @@ function closeNav() {
   document.getElementById("main").style.width = "100%";
 }
 
-function setIfFrameURL(loc) {
-  document.getElementById("frame").src = loc;
-}
-
 function setIfFrameURL(url) {
   $("#content").load(url, function (response) {
     if (status == "error") {
