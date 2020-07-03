@@ -170,7 +170,7 @@ It's a very silly and simple benchmark, but it gives you the possibility of play
 From the simpleness and according to my own (very simple) benchmark, I would use the Set method anytime I can.
 
 
-## Browser compatibility 🔌
+## Browser compatibility 🔌
 
 |          | ⚠️        | ✅        | ✅        | ✅        | ✅        | ✅        |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
