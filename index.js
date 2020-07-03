@@ -6,6 +6,17 @@ let interval,
   isRunning = false,
   display = document.querySelector("#time");
 
+const images = [
+  "./assets/Carlos.png",
+  "./assets/Felipe.png",
+  "./assets/Javi.png",
+];
+
+window.onload = function () {
+  document.getElementById("header-image").src =
+    images[Math.round(Math.random() * 2)];
+};
+
 function startTimer(display) {
   isRunning = true;
   interval = setInterval(function () {
