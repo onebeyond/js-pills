@@ -1,3 +1,5 @@
+// Credit to Samantha Ming https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/
+
 const originalArray = ['🇪🇸', '🏁', '🇪🇺', '🇪🇸', '🇪🇸', '🇮🇨', '🇮🇨', '🏳️‍🌈', '🇮🇨', '🇮🇨', '🇮🇨', '🇪🇺'];
 
 const reduceMethod = array => array.reduce((acc, flag) => acc.includes(flag) ? acc : [...acc, flag], []);
