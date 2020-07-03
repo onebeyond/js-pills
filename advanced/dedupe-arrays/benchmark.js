@@ -17,11 +17,11 @@ const dedupe = array => dedupeMethod=> {
   else results[dedupeMethod] = [duration];
 };
 
-
 const ITERATIONS = 10;
 const ARRAY_LENGTH = 100000;
 const RANDOM_RANGE = 5000;
 let iterationCounter = 0;
+const startTime = Date.now();
 [... new Array(ITERATIONS)].forEach(() => {
   console.log(`\n----------------------------- start of iteration ${++iterationCounter} / ${ITERATIONS}`);
   const array = generateRandomArray(ARRAY_LENGTH, randomIntegers(RANDOM_RANGE));
@@ -29,7 +29,13 @@ let iterationCounter = 0;
   [reduceMethod, filterMethod, setMethod].forEach(dedupe(array));
   console.log(`----------------------------- end of iteration ${iterationCounter} / ${ITERATIONS}`);
 });
+const finishTime = Date.now();
+
+const summary = `
+const ITERATIONS = ${ITERATIONS};
+const ARRAY_LENGTH = ${ARRAY_LENGTH};
+const RANDOM_RANGE = ${RANDOM_RANGE};`;
+console.log(summary);
 
 console.table(normalizedResults(results));
-// console.log(results);
-// console.log(normalizedResults(results));
+console.log(`Benchmark total run time: ${finishTime - startTime} ms`)

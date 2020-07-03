@@ -2,7 +2,7 @@
 
 We're presenting 3 ways to dedupe an array in Javascript.
 
-Credits to Samantha Ming: https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/
+Credits to Samantha Ming: [https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/](https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/)
 
 ## Original array
 
@@ -133,13 +133,9 @@ explainFilter();
 
 ## 3. Set
 
-The third method to be shown uses Set:
+The third method to be shown uses [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set).
 
-```javascript
-const setMethod = array => [...new Set(array)];
-```
-
-This method create a new Set with the elements of the array. A Set only accepts unique values, so it dedupes the incoming values.
+This method creates a new Set with the elements of the array. A Set stores only unique values, so it will dedupe the incoming ones.
 ```javascript
 const uniqueSet = new Set(originalArray);
 // Set { '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' }
@@ -150,7 +146,7 @@ const set2Array = [...uniqueSet]
 // [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]
 ```
 
-And :tada:, our deduped array:
+And 🎉🎉🎉, our deduped array:
 ```javascript
 const setMethod = array => [...new Set(array)];
 
@@ -160,10 +156,60 @@ setMethod(originalArray)
 
 ## Benchmark
 
-After reading, GGGGGGGGGGG created a benchmark against the code by Samantha, I decided to create mine.
+After reading [Miguel Albrecht](https://blog.usejournal.com/performance-of-javascript-array-ops-2690aed47a50) created a benchmark against the code by Samantha, I decided to create mine.
 
 It's a very silly and simple benchmark, but it gives you the possibility of playing with the values and will give you the idea of what of the 3 ways is better to use.
 
+In the benchmark, there are 3 configurable variables:
+- *ITERATIONS*: the number of times the methods are going to be run
+- *ARRAY_LENGTH*: the size of the array that is going to be deduped
+- *RANDOM_RANGE*: the range of numbers that are going to be randomly picked to fill the array. i.e. 5000 means we're going to pick a random number between 0-5000 for every position of the array to be filled. The higher, the more chances to have less duplicate values.
+
+Some results of this benchmark (run in my MacBook Pro laptop)*:
+- (index): the method run
+- Values: the mean of all iterations run (in ms)
+
+```
+const ITERATIONS = 10;
+const ARRAY_LENGTH = 100000;
+const RANDOM_RANGE = 5000;
+┌─────────────────────────────────────────────────────────────────────────────────────┬────────┐
+│                                       (index)                                       │ Values │
+├─────────────────────────────────────────────────────────────────────────────────────┼────────┤
+│ array => array.reduce((acc, flag) => acc.includes(flag) ? acc : [...acc, flag], []) │ 267.2  │
+│        array => array.filter((flag, index) => array.indexOf(flag) === index)        │ 475.9  │
+│                            array => [...new Set(array)]                             │   3    │
+└─────────────────────────────────────────────────────────────────────────────────────┴────────┘
+Benchmark total run time: 7511 ms
+```
+```
+const ITERATIONS = 10;
+const ARRAY_LENGTH = 500000;
+const RANDOM_RANGE = 9000;
+┌─────────────────────────────────────────────────────────────────────────────────────┬────────┐
+│                                       (index)                                       │ Values │
+├─────────────────────────────────────────────────────────────────────────────────────┼────────┤
+│ array => array.reduce((acc, flag) => acc.includes(flag) ? acc : [...acc, flag], []) │  1945  │
+│        array => array.filter((flag, index) => array.indexOf(flag) === index)        │ 3479.7 │
+│                            array => [...new Set(array)]                             │  14.4  │
+└─────────────────────────────────────────────────────────────────────────────────────┴────────┘
+Benchmark total run time: 54817 ms
+```
+```
+const ITERATIONS = 10;
+const ARRAY_LENGTH = 1000000;
+const RANDOM_RANGE = 100000;
+┌─────────────────────────────────────────────────────────────────────────────────────┬─────────┐
+│                                       (index)                                       │ Values  │
+├─────────────────────────────────────────────────────────────────────────────────────┼─────────┤
+│ array => array.reduce((acc, flag) => acc.includes(flag) ? acc : [...acc, flag], []) │ 44740.6 │
+│        array => array.filter((flag, index) => array.indexOf(flag) === index)        │ 63489.5 │
+│                            array => [...new Set(array)]                             │  36.6   │
+└─────────────────────────────────────────────────────────────────────────────────────┴─────────┘
+Benchmark total run time: 1083454 ms
+```
+
+\* Don't rely on these values as it is not a very reliable benchmark nor its results are too. But it shows a pattern...
 
 ## So, what do I use
 
@@ -172,13 +218,26 @@ From the simpleness and according to my own (very simple) benchmark, I would use
 
 ## Browser compatibility 🔌
 
-|          | ⚠️        | ✅        | ✅        | ✅        | ✅        | ✅        |
-| -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| 💻        | IE       | Edge     | Firefox  | Chrome   | Safari   | Opera    |
-| reduce   | 9        | 12       | 3        | 4        | 5        | 11.5      |
-| filter   | 9        | 12       | 2        | 4        | 3.1      | 10        |
-| includes | -        | 14       | 43       | 47       | 9        | 34        |
-| indexOf  | 9        | 12       | 2        | 4        | 3.1      | 10        |
-| set      | 11       | 12       | 13       | 38       | 8        | 25        |
-| ...      | -        | 12       | 16       | 46       | 8        | 37        |
+|          | ⚠️        | ✅        | ✅        | ✅        | ✅        | ✅        | ✅        |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| 💻        | IE       | Edge     | Firefox  | Chrome   | Safari   | Opera    | Node.js  |
+| [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)   | 9        | 12       | 3        | 3        | 5        | 10.5     | 0.1.100  |
+| [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)   | 9        | 12       | 1.5      | 1        | 3        | 9.5      | 0.1.100  |
+| [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) | -        | 14       | 43       | 47       | 9        | 34       | 6.0.0    |
+| [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)  | 9        | 12       | 1.5      | 1        | 3        | 9.5      | 0.1.100  |
+| [set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)      | 11       | 12       | 13       | 38       | 8        | 25       | 0.12     |
+| [...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)      | -        | 12       | 16       | 46       | 8        | 37       | 5.0.0    |
 
+## Resources
+
+- [@telekosmos ' Github Gist uniq.js](https://gist.github.com/telekosmos/3b62a31a5c43f40849bb)
+- [Samantha Ming Tidbits: How to Remove Array Duplicates in ES6](https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/)
+- [DailyJS - by Samantha Ming: How to Remove Array Duplicates in ES6](https://medium.com/dailyjs/how-to-remove-array-duplicates-in-es6-5daa8789641c)
+- [Samantha Ming Instagram](https://www.instagram.com/p/BsjA-eiBAeT/)
+- [Performance of Javascript Array Ops by Miguel Albrecht](https://blog.usejournal.com/performance-of-javascript-array-ops-2690aed47a50) 
+- [MSDN Web Docs: reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+- [MSDN Web Docs: filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [MSDN Web Docs: includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+- [MSDN Web Docs: indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+- [MSDN Web Docs: set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+- [MSDN Web Docs: spread operator syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
