@@ -76,6 +76,11 @@ console.table(steps)
 └─────────┴────────┴────────────────────────────────────────────┴───────────────────┴────────────────────────────────────────────┘
 ```
 
+You can run that explained code from the source in this repository running:
+```bash
+node ./explained.js
+```
+
 This way, only when a flag is not in the to-be-the-solution-array, it is appended to it.
 
 ## 2. Filter
@@ -129,6 +134,11 @@ explainFilter();
 │   10    │ '🇮🇨' │  10   │    5    │   false   │ 'DISCARD'  │
 │   11    │ '🇪🇺' │  11   │    2    │   false   │ 'DISCARD'  │
 └─────────┴────────┴───────┴─────────┴───────────┴────────────┘
+```
+
+You can run that explained code from the source in this repository running:
+```bash
+node ./explained.js
 ```
 
 ## 3. Set
@@ -207,6 +217,11 @@ const RANDOM_RANGE = 100000;
 │                            array => [...new Set(array)]                             │  36.6   │
 └─────────────────────────────────────────────────────────────────────────────────────┴─────────┘
 Benchmark total run time: 1083454 ms
+```
+
+You can run the benchmark yourself using yout terminal:
+```bash
+node ./benchmark.js
 ```
 
 \* Don't rely on these values as it is not a very reliable benchmark nor its results are too. But it shows a pattern...
