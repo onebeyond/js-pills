@@ -9,12 +9,11 @@ let interval,
 const images = [
   "./assets/Carlos.png",
   "./assets/Felipe.png",
-  "./assets/Javi.png",
 ];
 
 window.onload = function () {
   document.getElementById("header-image").src =
-    images[Math.round(Math.random() * 2)];
+    images[Math.round(Math.random() * 1)];
 };
 
 function startTimer(display) {
