@@ -1,4 +1,4 @@
-# GuideSmiths JS pills 💊
+# GuideSmiths JS pills 💊
 
 This repo contains all the JS pills prepared by our GS members.
 

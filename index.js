@@ -78,3 +78,15 @@ function setIfFrameURL(url) {
     document.getElementById("content").innerHTML = html;
   });
 }
+
+//TODO: Create a function to automatically add links when file is created
+function populateLists() {
+  $("#content").load('./advanced', function (response, status) {
+    if (status == "error") {
+      var msg = "Sorry but there was an error: ";
+      console.log(msg + xhr.status + " " + xhr.statusText);
+    }
+    console.log(response)
+    document.getElementsByClassName('advanced').appendChild(document.createElement('a').innerHTML = `Creado dinamicamente`)
+  })
+}
