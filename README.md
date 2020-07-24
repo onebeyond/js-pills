@@ -1,26 +1,26 @@
-#GuideSmiths JS pills 💊
+# GuideSmiths JS pills 💊
 
 This repo contains all the JS pills prepared by our GS members.
 
-### How do I create a pill 📝
+### How do I create a pill 📝
 
 To create a pill the only thing that you need is to write a README file into the corresponded folder (Advances, Pro or Basic) then create a link in `index.html`.
 
-###How to present your pill 🍿
+### How to present your pill 🍿
 
 - **Local environment**: The `index.html` has to be served. The VSCode extension [live serve](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
 
 - **Github pages**: Once you have created your pill's README and added a link in the `index.html` than push it into your repository and follow the [github pages](https://docs.github.com/es/github/working-with-github-pages/about-github-pages) instructions.
 
-###Be creative ✨
+### Be creative ✨
 
 You can add features to this project 😵!! For Example, we need to create a kind of alarm when the timer ends! Do you have any Idea? Feel free also to make some refactors. 😬
 
-###Contacts 📨
+### Contacts 📨
 
 For any questions on how to create your pill or add a feature, please contact me! (I'm Giorgio)
 
-###Contributors
+### Contributors
 
 <table>
   <tr>
