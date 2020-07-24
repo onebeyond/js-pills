@@ -8,7 +8,7 @@ To create a pill the only thing that you need is to write a README file into the
 
 ### How to present your pill 🍿
 
-- **Local environment**: The `index.html` has to be served. The VSCode extension [live serve](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
+- **Local environment**: The `index.html` has to be served. The VSCode extension [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
 
 - **Github pages**: Once you have created your pill's README and added a link in the `index.html` than push it into your repository and follow the [github pages](https://docs.github.com/es/github/working-with-github-pages/about-github-pages) instructions.
 
