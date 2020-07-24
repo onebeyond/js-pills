@@ -2,7 +2,7 @@
 
 This repo contains all the JS pills prepared by our GS members.
 
-### How do I create a pill 📝
+### How do I create a pill? 📝
 
 To create a pill the only thing that you need is to write a README file into the corresponded folder (Advances, Pro or Basic) then create a link in `index.html`.
 
