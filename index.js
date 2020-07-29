@@ -6,14 +6,12 @@ let interval,
   isRunning = false,
   display = document.querySelector("#time");
 
-const images = [
-  "./assets/Carlos.png",
-  "./assets/Felipe.png",
-];
+const images = ["./assets/Carlos.png", "./assets/Felipe.png"];
 
 window.onload = function () {
   document.getElementById("header-image").src =
     images[Math.round(Math.random() * 1)];
+  hljs.initHighlightingOnLoad();
 };
 
 function startTimer(display) {
@@ -76,17 +74,8 @@ function setIfFrameURL(url) {
     var converter = new showdown.Converter({ tables: true }),
       html = converter.makeHtml(response);
     document.getElementById("content").innerHTML = html;
+    document.querySelectorAll("pre code").forEach((block) => {
+      hljs.highlightBlock(block);
+    });
   });
-}
-
-//TODO: Create a function to automatically add links when file is created
-function populateLists() {
-  $("#content").load('./advanced', function (response, status) {
-    if (status == "error") {
-      var msg = "Sorry but there was an error: ";
-      console.log(msg + xhr.status + " " + xhr.statusText);
-    }
-    console.log(response)
-    document.getElementsByClassName('advanced').appendChild(document.createElement('a').innerHTML = `Creado dinamicamente`)
-  })
 }
