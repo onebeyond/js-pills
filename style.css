@@ -135,8 +135,7 @@ a {
 }
 
 code {
-  background-color: #334150;
-  color: #f8f8f2;
+  background-color: #F0F0F0;
   border-radius: 0.3rem;
   padding: 4px 5px 5px;
   white-space: nowrap;
@@ -147,10 +146,10 @@ pre code {
 }
 
 pre {
-  background-color: #334150;
   padding: 5px;
   border-radius: 0.3em;
   color: red;
+  overflow-y: auto;
 }
 
 .carlos-comic {
@@ -334,3 +333,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
