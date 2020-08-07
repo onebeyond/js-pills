@@ -14,7 +14,12 @@ To create a pill the only thing that you need is to write a README file into the
 
 ### Be creative ✨
 
-You can add features to this project 😵!! For Example, we need to create a kind of alarm when the timer ends! Do you have any Idea? Feel free also to make some refactors. 😬
+You can add features to this project 😵!! For Example: 
+- [ ] Create a kind of alarm when the timer ends! 
+- [ ] Create a function that automatically adds links into `index.html` of the created README 
+- [ ] Add animation when the timer starts
+
+Or if you have any other idea that's perfect! Feel free also to make some refactors. 😬
 
 ### Contacts 📨
 
