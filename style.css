@@ -282,6 +282,7 @@ main {
 .fixed {
   position: fixed;
   height: 100%;
+  width: 20%;
   top: 0;
   box-shadow: 1px 1px 7px 3px #21212170;
   background-image: linear-gradient(
