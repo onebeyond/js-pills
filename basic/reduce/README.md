@@ -4,7 +4,7 @@ The reduce() method executes a reducer function (that you provide) on each eleme
 
 ## Syntax ✏️
 
-```
+```js
 arr.reduce(callback( accumulator, currentValue[, index[, array]] )[, initialValue])
 ```
 
@@ -14,7 +14,7 @@ Your reducer function's returned value is assigned to the accumulator, whose val
 
 YES, in some cases
 
-```
+```js
 let maxCallback = ( acc, cur ) => Math.max( acc.x, cur.x );
 
 // reduce without initialValue
@@ -28,7 +28,7 @@ let maxCallback = ( acc, cur ) => Math.max( acc.x, cur.x );
 
 We can calculate a sum of numbers in an array
 
-```
+```js
 const cb = (acc, val) => acc + val
 
 const sum = [1, 1].reduce(cb);
@@ -38,7 +38,7 @@ const sum = [1, 1].reduce(cb);
 
 We can accumulate characters in an array to create a string
 
-```
+```js
 const cb = (acc, val) => acc + val
 
 const animals = ['🐈','🦮'].reduce(cb);
@@ -48,7 +48,7 @@ const animals = ['🐈','🦮'].reduce(cb);
 
 We have to take a pizza orders, we'll store them in our `order` variable
 
-```
+```js
 let order = [
   { name: "Prosciutto e Funghi", quantity: 1 },
   { name: "Margherita", quantity: 1 },
@@ -63,7 +63,7 @@ let order = [
 We notice that someone has choose the same pizza many times 😱,
 but thanks to our reduce method we can accumulate it:
 
-```
+```js
 let pizzas = order.reduce((acc, pizza) => {
   if (acc[pizza.name]) {
     acc[pizza.name] += pizza.quantity;
