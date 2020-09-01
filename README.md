@@ -37,8 +37,6 @@ For any questions on how to create your pill or add a feature, please contact me
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/rakelqr"><img src="https://avatars3.githubusercontent.com/u/48944173?s=120&v=4" width="100px;" alt=""/><br /><sub><b>rakelqr</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=rakelqr" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
     <td align="center"><a href="https://github.com/alejandrosz"><img src="https://avatars1.githubusercontent.com/u/55948481?s=460&u=cdcc6f2e6c19e6d25c1788f9e1fab78675ca214a&v=4" width="100px;" alt=""/><br /><sub><b>alejandrosz</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=alejandrosz" title="Documentation">📖</a></td>
   </tr>
 </table>
