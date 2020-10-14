@@ -1,4 +1,4 @@
-const INITIAL_TIMER = 3//60 * 2 + 30;
+const INITIAL_TIMER = 60 * 2 + 30;
 let interval,
   isPaused = false,
   timer = INITIAL_TIMER,
