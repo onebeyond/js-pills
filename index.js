@@ -1,6 +1,7 @@
+const INITIAL_TIMER = 60 * 2 + 30;
 let interval,
   isPaused = false,
-  timer = 60 * 2 + 29,
+  timer = INITIAL_TIMER,
   minutes,
   seconds,
   isRunning = false,
@@ -12,21 +13,29 @@ window.onload = function () {
   document.getElementById("header-image").src =
     images[Math.round(Math.random() * 1)];
   hljs.initHighlightingOnLoad();
+
+  display.textContent = getMinSec(timer);
+
 };
 
-function startTimer(display) {
+function getMinSec (timer) {
+  minutes = parseInt(timer / 60, 10);
+  seconds = parseInt(timer % 60, 10);
+
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+  return minutes + ":" + seconds;
+}
+
+function startTimer (display) {
   isRunning = true;
   interval = setInterval(function () {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
-
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    display.textContent = minutes + ":" + seconds;
-
+    display.textContent = getMinSec(timer);
     if (--timer < 0) {
       timer = 0;
+      clearInterval(interval);
+      display.classList.add('blinking');
     }
   }, 1000);
 }
@@ -45,8 +54,9 @@ function pause() {
 
 function reset() {
   isRunning = false;
-  timer = 60 * 2 + 30;
-  display.textContent = "02:30";
+  timer = INITIAL_TIMER;
+  display.textContent = getMinSec(timer);
+  display.classList.remove('blinking');
 }
 
 function openNav() {
