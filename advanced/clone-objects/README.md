@@ -1,6 +1,4 @@
-# <a onclick="setIfFrameURL('./advanced/falsey-values/README.md')"
-              >Remove falsey elements from an array</a
-            >
+# Clone Javascript Objects
 
 Objects in Javascript are references values, so you can't just copy using assing operator `=`
 ```js
