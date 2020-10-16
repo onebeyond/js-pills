@@ -1,4 +1,6 @@
-# Clone Javascript Objects
+# <a onclick="setIfFrameURL('./advanced/falsey-values/README.md')"
+              >Remove falsey elements from an array</a
+            >
 
 Objects in Javascript are references values, so you can't just copy using assing operator `=`
 ```js
@@ -38,7 +40,7 @@ console.log(car2); //{ doors: 2, color: 'blue' };
 console.log(car1); //{ doors: 4, color: 'blue' }; ✅
 ```
 
-But remember, this way do a shallow clone. It means that, if you have nested objects, them won't be cloned and we'll have reference again
+But remember, this way do a shallow clone. It means that, if you have nested objects, they won't be cloned and we'll have a reference again
 
 ```js
 const car1 = { doors: 4, color: 'blue' };
@@ -56,7 +58,7 @@ If we've interested on cloning nested objects too, we need a deep clone
 
 #### Using JSON
 
-This is a quick dirty way to get a deep clone. It has native support, so you not need external deps. In practice, it is used more than it seems
+This is a quick dirty way to get a deep clone. It has native support, so you don't need external deps. In practice, it is used more than it seems
 
 ```js
 const car1 = { doors: 4, color: 'blue', specs: { speed: 100, longitude: 300 } };
