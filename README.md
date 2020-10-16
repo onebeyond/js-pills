@@ -1,6 +1,6 @@
 # GuideSmiths JS pills 💊
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -63,6 +63,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://www.guidesmiths.com"><img src="https://avatars2.githubusercontent.com/u/3338149?v=4" width="100px;" alt=""/><br /><sub><b>Felipe Polo Ruiz</b></sub></a><br /><a href="#infra-feliun" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-feliun" title="Content">🖋</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=feliun" title="Code">💻</a> <a href="#maintenance-feliun" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/dancol93"><img src="https://avatars1.githubusercontent.com/u/16827815?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Colás</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=dancol93" title="Code">💻</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=dancol93" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/rakelqr"><img src="https://avatars2.githubusercontent.com/u/48944173?v=4" width="100px;" alt=""/><br /><sub><b>Raquel Q Rodríguez</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=rakelqr" title="Code">💻</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=rakelqr" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/alejandrosz"><img src="https://avatars3.githubusercontent.com/u/55948481?v=4" width="100px;" alt=""/><br /><sub><b>Alejandro Sánchez Zaragoza</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=alejandrosz" title="Code">💻</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=alejandrosz" title="Documentation">📖</a></td>
   </tr>
 </table>
 
