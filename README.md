@@ -1,6 +1,6 @@
 # GuideSmiths JS pills 💊
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -58,6 +58,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://instagram.com/baumannzone"><img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Baumann</b></sub></a><br /><a href="#infra-baumannzone" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-baumannzone" title="Content">🖋</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=baumannzone" title="Code">💻</a> <a href="#maintenance-baumannzone" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/Betisman"><img src="https://avatars0.githubusercontent.com/u/11455322?v=4" width="100px;" alt=""/><br /><sub><b>Carlos Jiménez</b></sub></a><br /><a href="#infra-Betisman" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-Betisman" title="Content">🖋</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=Betisman" title="Code">💻</a> <a href="#maintenance-Betisman" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
