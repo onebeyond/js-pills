@@ -72,6 +72,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "alejandrosz",
+      "name": "Alejandro Sánchez Zaragoza",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/55948481?v=4",
+      "profile": "https://github.com/alejandrosz",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
