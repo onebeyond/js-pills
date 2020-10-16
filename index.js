@@ -2,8 +2,6 @@ const INITIAL_TIMER = 60 * 2 + 30;
 let interval,
   isPaused = false,
   timer = INITIAL_TIMER,
-  minutes,
-  seconds,
   isRunning = false,
   display = document.querySelector("#time"),
   audio = document.querySelector("#audioBell");
@@ -15,24 +13,20 @@ window.onload = function () {
     images[Math.round(Math.random() * 1)];
   hljs.initHighlightingOnLoad();
 
-  display.textContent = getMinSec(timer);
+  display.textContent = getReadableTime(timer);
 
 };
 
-function getMinSec (timer) {
-  minutes = parseInt(timer / 60, 10);
-  seconds = parseInt(timer % 60, 10);
-
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-  
-  return minutes + ":" + seconds;
+function getReadableTime (secs) {
+  const minutes = parseInt(secs / 60, 10).toString().padStart(2, '0');
+  const seconds = parseInt(secs % 60, 10).toString().padStart(2, '0');
+  return `${minutes}:${seconds}`;
 }
 
 function startTimer (display) {
   isRunning = true;
   interval = setInterval(function () {
-    display.textContent = getMinSec(timer);
+    display.textContent = getReadableTime(timer);
     if (--timer < 0) {
       timer = 0;
       clearInterval(interval);
@@ -57,7 +51,7 @@ function pause() {
 function reset() {
   isRunning = false;
   timer = INITIAL_TIMER;
-  display.textContent = getMinSec(timer);
+  display.textContent = getReadableTime(timer);
   display.classList.remove('blinking');
 }
 
