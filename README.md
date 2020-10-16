@@ -1,4 +1,7 @@
 # GuideSmiths JS pills 💊
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
 
@@ -44,3 +47,22 @@ For any questions on how to create your pill or add a feature, please contact me
     <td align="center"><a href="https://github.com/alejandrosz"><img src="https://avatars1.githubusercontent.com/u/55948481?s=460&u=cdcc6f2e6c19e6d25c1788f9e1fab78675ca214a&v=4" width="100px;" alt=""/><br /><sub><b>alejandrosz</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=alejandrosz" title="Documentation">📖</a></td>
   </tr>
 </table>
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://instagram.com/baumannzone"><img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Baumann</b></sub></a><br /><a href="#infra-baumannzone" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-baumannzone" title="Content">🖋</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=baumannzone" title="Code">💻</a> <a href="#maintenance-baumannzone" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
