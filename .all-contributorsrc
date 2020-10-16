@@ -82,6 +82,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "jgleal",
+      "name": "Javier",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2418727?v=4",
+      "profile": "https://github.com/jgleal",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
