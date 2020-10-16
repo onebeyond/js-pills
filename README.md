@@ -1,6 +1,6 @@
 # GuideSmiths JS pills 💊
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -60,6 +60,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://instagram.com/baumannzone"><img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Baumann</b></sub></a><br /><a href="#infra-baumannzone" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-baumannzone" title="Content">🖋</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=baumannzone" title="Code">💻</a> <a href="#maintenance-baumannzone" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/Betisman"><img src="https://avatars0.githubusercontent.com/u/11455322?v=4" width="100px;" alt=""/><br /><sub><b>Carlos Jiménez</b></sub></a><br /><a href="#infra-Betisman" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-Betisman" title="Content">🖋</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=Betisman" title="Code">💻</a> <a href="#maintenance-Betisman" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://girgetto.github.io/portfolio/"><img src="https://avatars0.githubusercontent.com/u/33903092?v=4" width="100px;" alt=""/><br /><sub><b>Giorgio Grassini</b></sub></a><br /><a href="#infra-Girgetto" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#design-Girgetto" title="Design">🎨</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=Girgetto" title="Code">💻</a> <a href="#maintenance-Girgetto" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://www.guidesmiths.com"><img src="https://avatars2.githubusercontent.com/u/3338149?v=4" width="100px;" alt=""/><br /><sub><b>Felipe Polo Ruiz</b></sub></a><br /><a href="#infra-feliun" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-feliun" title="Content">🖋</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=feliun" title="Code">💻</a> <a href="#maintenance-feliun" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
