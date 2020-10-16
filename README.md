@@ -2,6 +2,9 @@
 
 This repo contains all the JS pills prepared by our GS members.
 
+## Live demo
+https://guidesmiths.github.io/js-pills/
+
 ### How do I create a pill? 📝
 
 To create a pill the only thing that you need is to write a README file into the corresponded folder (Advances, Pro or Basic) then create a link in `index.html`.
@@ -10,7 +13,8 @@ To create a pill the only thing that you need is to write a README file into the
 
 - **Local environment**: The `index.html` has to be served. The VSCode extension [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
 
-- **Github pages**: Once you have created your pill's README and added a link in the `index.html` than push it into your repository and follow the [github pages](https://docs.github.com/es/github/working-with-github-pages/about-github-pages) instructions.
+- **Github pages**: Once you have created your pill's README and added a link in the `index.html` than push it into your repository and follow the [github pages](https://docs.github.com/es/github/working-with-github-pages/about-github-pages) instructions.  
+**Deploys**: Check if your last commit is ready [here](https://github.com/guidesmiths/js-pills/deployments). 
 
 ### Be creative ✨
 
