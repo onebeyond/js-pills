@@ -40,6 +40,18 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "feliun",
+      "name": "Felipe Polo Ruiz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3338149?v=4",
+      "profile": "http://www.guidesmiths.com",
+      "contributions": [
+        "infra",
+        "content",
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
