@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "baumannzone",
+      "name": "Jorge Baumann",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5422102?v=4",
+      "profile": "https://instagram.com/baumannzone",
+      "contributions": [
+        "infra",
+        "content",
+        "code",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "js-pills",
+  "projectOwner": "guidesmiths",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
