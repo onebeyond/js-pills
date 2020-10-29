@@ -102,6 +102,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "danielherrerohernando",
+      "name": "Daniel Herrero Hernando",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/43818056?v=4",
+      "profile": "https://github.com/danielherrerohernando",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
