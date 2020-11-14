@@ -112,6 +112,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "telekosmos",
+      "name": "Guillermo C. Martínez",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1622788?v=4",
+      "profile": "https://github.com/telekosmos",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
