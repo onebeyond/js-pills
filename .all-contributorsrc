@@ -132,6 +132,16 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "GentooXativa",
+      "name": "Jose Vicente Giner Sanchez",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/615612?v=4",
+      "profile": "https://www.gentooxativa.com",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
