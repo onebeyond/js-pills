@@ -1,0 +1,133 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "baumannzone",
+      "name": "Jorge Baumann",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5422102?v=4",
+      "profile": "https://instagram.com/baumannzone",
+      "contributions": [
+        "infra",
+        "content",
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "Betisman",
+      "name": "Carlos Jiménez",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/11455322?v=4",
+      "profile": "https://github.com/Betisman",
+      "contributions": [
+        "infra",
+        "content",
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "Girgetto",
+      "name": "Giorgio Grassini",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/33903092?v=4",
+      "profile": "http://girgetto.github.io/portfolio/",
+      "contributions": [
+        "infra",
+        "design",
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "feliun",
+      "name": "Felipe Polo Ruiz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3338149?v=4",
+      "profile": "http://www.guidesmiths.com",
+      "contributions": [
+        "infra",
+        "content",
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "dancol93",
+      "name": "Daniel Colás",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/16827815?v=4",
+      "profile": "https://github.com/dancol93",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "rakelqr",
+      "name": "Raquel Q Rodríguez",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/48944173?v=4",
+      "profile": "https://github.com/rakelqr",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "alejandrosz",
+      "name": "Alejandro Sánchez Zaragoza",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/55948481?v=4",
+      "profile": "https://github.com/alejandrosz",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "jgleal",
+      "name": "Javier",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2418727?v=4",
+      "profile": "https://github.com/jgleal",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "crackvine",
+      "name": "crackvine",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/60526114?v=4",
+      "profile": "https://github.com/crackvine",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "danielherrerohernando",
+      "name": "Daniel Herrero Hernando",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/43818056?v=4",
+      "profile": "https://github.com/danielherrerohernando",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "telekosmos",
+      "name": "Guillermo C. Martínez",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1622788?v=4",
+      "profile": "https://github.com/telekosmos",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "js-pills",
+  "projectOwner": "guidesmiths",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
