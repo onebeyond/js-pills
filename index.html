@@ -16,12 +16,7 @@
   </head>
   <body>
     <main id="main">
-      <span
-        class="burger"
-        style="font-size: 30px; cursor: pointer;"
-        onclick="openNav()"
-        >&#9776;</span
-      >
+      <span class="burger" style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
       <div class="logo">
         <img src="./assets/GS_logo.svg" alt="guidesmiths" />
         <h1>JS Pills</h1>
@@ -38,27 +33,16 @@
         <div class="links">
           <div class="advanced grow">
             <h3>Advanced 💊</h3>
-            <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
-              >Merging-arrays</a
-            >
-            <a onclick="setIfFrameURL('./advanced/dedupe-arrays/README.md')"
-              >3 ways to deduplicate arrays</a
-            >
-            <a onclick="setIfFrameURL('./advanced/using-!!operator/README.md')"
-              >Convert to boolean using !! operator</a
-            >
-            <a onclick="setIfFrameURL('./advanced/falsey-values/README.md')"
-              >Remove falsey elements from an array</a
-            >
-            <a onclick="setIfFrameURL('./advanced/clone-objects/README.md')"
-              >Clone Javascript Objects</a
-            >
+            <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')">Merging-arrays</a>
+            <a onclick="setIfFrameURL('./advanced/dedupe-arrays/README.md')">3 ways to deduplicate arrays</a>
+            <a onclick="setIfFrameURL('./advanced/using-!!operator/README.md')">Convert to boolean using !! operator</a>
+            <a onclick="setIfFrameURL('./advanced/falsey-values/README.md')">Remove falsey elements from an array</a>
+            <a onclick="setIfFrameURL('./advanced/clone-objects/README.md')">Clone Javascript Objects</a>
+            <a onclick="setIfFrameURL('./advanced/check-conditions/README.md')">Check conditions concurrently</a>
           </div>
           <div class="pro grow">
             <h3>Pro 💊</h3>
-            <a onclick="setIfFrameURL('./pro/currying/README.md')"
-              >Currying</a
-            >
+            <a onclick="setIfFrameURL('./pro/currying/README.md')">Currying</a>
             <a onclick="setIfFrameURL('./pro/array-of-consecutive-numbers/README.md')"
               >Creating an array of consecutive numbers</a
             >
@@ -66,10 +50,7 @@
           <div class="basic grow">
             <h3>Basic 💊</h3>
             <a onclick="setIfFrameURL('./basic/reduce/README.md')">Reduce</a>
-            <a
-              onclick="setIfFrameURL('./basic/Array.prototype.every/README.md')"
-              >Array.prototype.every</a
-            >
+            <a onclick="setIfFrameURL('./basic/Array.prototype.every/README.md')">Array.prototype.every</a>
             <a onclick="setIfFrameURL('./basic/converting/README.md')"
               >Converting to number using + operator</a
             >
@@ -81,28 +62,22 @@
         </div>
         <div id="secret"></div>
         <div id="content">
-          <h1 style="text-align: center;">
-            Welcome to the Guidesmiths JS pills page, select a pill to start
-          </h1>
+          <h1 style="text-align: center">Welcome to the Guidesmiths JS pills page, select a pill to start</h1>
         </div>
       </section>
     </main>
     <div id="mySidenav" class="sidenav">
       <div class="fixed">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div id="time"></div>
         <audio id="audioBell">
-          <source src="./assets/bell.mp3" type="audio/mpeg" preload>
+          <source src="./assets/bell.mp3" type="audio/mpeg" preload />
         </audio>
         <button onclick="play()">Start</button>
         <button onclick="pause()">Pause</button>
         <button onclick="reset()">Reset</button>
         <div class="javi-comic">
-          <div class="speech-bubble">
-            Let's start the pill!! 🎉
-          </div>
+          <div class="speech-bubble">Let's start the pill!! 🎉</div>
         </div>
         <div class="pill-animation">
           <img src="./assets/Javi.png" alt="guidesmiths" id="javi" />
