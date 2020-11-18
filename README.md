@@ -1,6 +1,6 @@
 # GuideSmiths JS pills 💊
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/danielherrerohernando"><img src="https://avatars3.githubusercontent.com/u/43818056?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Herrero Hernando</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=danielherrerohernando" title="Code">💻</a> <a href="https://github.com/guidesmiths/js-pills/commits?author=danielherrerohernando" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/telekosmos"><img src="https://avatars1.githubusercontent.com/u/1622788?v=4" width="100px;" alt=""/><br /><sub><b>Guillermo C. Martínez</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=telekosmos" title="Code">💻</a> <a href="#content-telekosmos" title="Content">🖋</a></td>
     <td align="center"><a href="http://lauracorbi.com"><img src="https://avatars0.githubusercontent.com/u/18383417?v=4" width="100px;" alt=""/><br /><sub><b>Laura</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=dustytrinkets" title="Code">💻</a> <a href="#content-dustytrinkets" title="Content">🖋</a></td>
+    <td align="center"><a href="https://www.gentooxativa.com"><img src="https://avatars0.githubusercontent.com/u/615612?v=4" width="100px;" alt=""/><br /><sub><b>Jose Vicente Giner Sanchez</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=GentooXativa" title="Code">💻</a> <a href="#content-GentooXativa" title="Content">🖋</a></td>
   </tr>
 </table>
 
