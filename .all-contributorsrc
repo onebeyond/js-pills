@@ -122,6 +122,36 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "dustytrinkets",
+      "name": "Laura",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/18383417?v=4",
+      "profile": "http://lauracorbi.com",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    },
+    {
+      "login": "GentooXativa",
+      "name": "Jose Vicente Giner Sanchez",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/615612?v=4",
+      "profile": "https://www.gentooxativa.com",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    },
+    {
+      "login": "lucas1004jx",
+      "name": "xin jin",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26882101?v=4",
+      "profile": "https://lucas1004jx.github.io/index.html",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
