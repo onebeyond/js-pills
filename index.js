@@ -83,3 +83,30 @@ function setIfFrameURL(url) {
     });
   });
 }
+
+$(function () {
+  $(".scroll-down").click(function () {
+    $("html, body").animate(
+      { scrollTop: $("section.ok").offset().top },
+      "slow"
+    );
+    return false;
+  });
+});
+
+const levels = Object.keys(pills);
+
+levels.forEach((level) => {
+  pills[level].forEach((pill) => {
+    let link = document.createElement("a");
+    link.innerHTML +=
+      '<a onclick="setIfFrameURL("./' +
+      level +
+      "/" +
+      pill +
+      '/README.md")">' +
+      pill +
+      "</a>";
+    document.querySelector("." + level).appendChild(link);
+  });
+});

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="guidesmiths js pills" />
     <title>Guidesmiths - JS Pills</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -18,7 +19,7 @@
     <main id="main">
       <span
         class="burger"
-        style="font-size: 30px; cursor: pointer;"
+        style="font-size: 30px; cursor: pointer"
         onclick="openNav()"
         >&#9776;</span
       >
@@ -33,8 +34,9 @@
             🇬🇧 Have you taken your pill ?
           </div>
         </div>
+        <a href="#" class="scroll-down" address="true"></a>
       </div>
-      <section class="pills-sections">
+      <section class="pills-sections ok">
         <div class="links">
           <div class="advanced grow">
             <h3>Advanced 💊</h3>
@@ -53,9 +55,7 @@
           </div>
           <div class="pro grow">
             <h3>Pro 💊</h3>
-            <a onclick="setIfFrameURL('./pro/currying/README.md')"
-              >Currying</a
-            >
+            <a onclick="setIfFrameURL('./pro/currying/README.md')">Currying</a>
           </div>
           <div class="basic grow">
             <h3>Basic 💊</h3>
@@ -68,7 +68,7 @@
         </div>
         <div id="secret"></div>
         <div id="content">
-          <h1 style="text-align: center;">
+          <h1 style="text-align: center">
             Welcome to the Guidesmiths JS pills page, select a pill to start
           </h1>
         </div>
@@ -84,9 +84,7 @@
         <button onclick="pause()">Pause</button>
         <button onclick="reset()">Reset</button>
         <div class="javi-comic">
-          <div class="speech-bubble">
-            Let's start the pill!! 🎉
-          </div>
+          <div class="speech-bubble">Let's start the pill!! 🎉</div>
         </div>
         <div class="pill-animation">
           <img src="./assets/Javi.png" alt="guidesmiths" id="javi" />
@@ -98,6 +96,7 @@
         </div>
       </div>
     </div>
+    <script src="./pills.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
