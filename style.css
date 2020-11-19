@@ -12,6 +12,10 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color: #007bff;
+}
+
 .burger {
   cursor: pointer;
   position: fixed;
