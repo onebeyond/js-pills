@@ -1,10 +1,10 @@
+const INITIAL_TIMER = 60 * 2 + 30;
 let interval,
   isPaused = false,
-  timer = 60 * 2 + 29,
-  minutes,
-  seconds,
+  timer = INITIAL_TIMER,
   isRunning = false,
-  display = document.querySelector("#time");
+  display = document.querySelector("#time"),
+  audio = document.querySelector("#audioBell");
 
 const images = ["./assets/Carlos.png", "./assets/Felipe.png"];
 
@@ -12,21 +12,29 @@ window.onload = function () {
   document.getElementById("header-image").src =
     images[Math.round(Math.random() * 1)];
   hljs.initHighlightingOnLoad();
+
+  display.textContent = getReadableTime(timer);
 };
+
+function getReadableTime(secs) {
+  const minutes = parseInt(secs / 60, 10)
+    .toString()
+    .padStart(2, "0");
+  const seconds = parseInt(secs % 60, 10)
+    .toString()
+    .padStart(2, "0");
+  return `${minutes}:${seconds}`;
+}
 
 function startTimer(display) {
   isRunning = true;
   interval = setInterval(function () {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
-
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    display.textContent = minutes + ":" + seconds;
-
+    display.textContent = getReadableTime(timer);
     if (--timer < 0) {
       timer = 0;
+      clearInterval(interval);
+      display.classList.add("blinking");
+      audio.play();
     }
   }, 1000);
 }
@@ -45,8 +53,9 @@ function pause() {
 
 function reset() {
   isRunning = false;
-  timer = 60 * 2 + 30;
-  display.textContent = "02:30";
+  timer = INITIAL_TIMER;
+  display.textContent = getReadableTime(timer);
+  display.classList.remove("blinking");
 }
 
 function openNav() {
@@ -99,14 +108,7 @@ const levels = Object.keys(pills);
 levels.forEach((level) => {
   pills[level].forEach((pill) => {
     let link = document.createElement("a");
-    link.innerHTML +=
-      '<a onclick="setIfFrameURL("./' +
-      level +
-      "/" +
-      pill +
-      '/README.md")">' +
-      pill +
-      "</a>";
+    link.innerHTML += `<a onclick="setIfFrameURL('./${level}/${pill.dir}/README.md')">${pill.name}</a>`;
     document.querySelector("." + level).appendChild(link);
   });
 });

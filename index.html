@@ -40,30 +40,12 @@
         <div class="links">
           <div class="advanced grow">
             <h3>Advanced 💊</h3>
-            <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
-              >Merging-arrays</a
-            >
-            <a onclick="setIfFrameURL('./advanced/dedupe-arrays/README.md')"
-              >3 ways to deduplicate arrays</a
-            >
-            <a onclick="setIfFrameURL('./advanced/using-!!operator/README.md')"
-              >Convert to boolean using !! operator</a
-            >
-            <a onclick="setIfFrameURL('./advanced/falsey-values/README.md')"
-              >Remove falsey elements from an array</a
-            >
           </div>
           <div class="pro grow">
             <h3>Pro 💊</h3>
-            <a onclick="setIfFrameURL('./pro/currying/README.md')">Currying</a>
           </div>
           <div class="basic grow">
             <h3>Basic 💊</h3>
-            <a onclick="setIfFrameURL('./basic/reduce/README.md')">Reduce</a>
-            <a
-              onclick="setIfFrameURL('./basic/Array.prototype.every/README.md')"
-              >Array.prototype.every</a
-            >
           </div>
         </div>
         <div id="secret"></div>
@@ -79,7 +61,10 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <div id="time">02:30</div>
+        <div id="time"></div>
+        <audio id="audioBell">
+          <source src="./assets/bell.mp3" type="audio/mpeg" preload />
+        </audio>
         <button onclick="play()">Start</button>
         <button onclick="pause()">Pause</button>
         <button onclick="reset()">Reset</button>
