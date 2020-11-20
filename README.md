@@ -10,11 +10,23 @@ This repo contains all the JS pills prepared by our GS members.
 
 ## Live demo
 
-https://guidesmiths.github.io/js-pills/
+[guidesmiths.github.io/js-pills/](https://guidesmiths.github.io/js-pills/)
 
-### How do I create a pill? 📝
+## How do I create a pill? 📝
 
-To create a pill the only thing that you need is to write a README file into the corresponded folder (Advances, Pro or Basic) then create a link in `index.html`.
+To create a pill the only thing that you need to do is execute the `createPill.js` file from the main directory with node like this:
+
+```
+node createPill.js
+```
+
+Then the system will ask you three question
+
+1. the name of your pill
+2. the name of the folder to add in the pills directory
+3. the level of your pill
+
+Then the system will create a directory in the pills folder with your pill's README file created, which you will modify for your presentation.
 
 ## How to present your pill 🍿
 
@@ -28,8 +40,9 @@ To create a pill the only thing that you need is to write a README file into the
 You can add features to this project 😵!! For Example:
 
 - [x] Create a kind of alarm when the timer ends!
-- [ ] Create a function that automatically adds links into `index.html` of the created README
+- [x] Create a function that automatically adds links into `index.html` of the created README
 - [ ] Add animation when the timer starts
+- [ ] Mobile version
 
 Or if you have any other idea that's perfect! Feel free also to make some refactors. 😬
 

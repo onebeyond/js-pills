@@ -60,9 +60,11 @@ const main = async () => {
   await question2();
   await question3();
   const dir = `./pills/${levelSelected}/${newPill.folder}`;
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir);
+  if (fs.existsSync(dir)) {
+    console.log(`The ${dir} already exist`);
+    rl.close();
   }
+  fs.mkdirSync(dir);
   fs.writeFileSync(
     `./pills/${levelSelected}/${newPill.folder}/README.md`,
     `### ${newPill.name}`,
