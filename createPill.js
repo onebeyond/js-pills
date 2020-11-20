@@ -8,6 +8,7 @@ const newPill = { name: "", folder: "" };
 let rawData = fs.readFileSync("./pills.json");
 let pills = JSON.parse(rawData);
 const levels = Object.keys(pills);
+let levelSelected = null;
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -42,6 +43,7 @@ const question3 = () => {
     rl.question(
       `Is ${levels[0]} [0] - ${levels[1]} [1] - ${levels[2]} [2] `,
       (answer) => {
+        levelSelected = levels[answer];
         console.log(`Pill's level: ${answer}`);
         pills = {
           ...pills,
@@ -57,7 +59,16 @@ const main = async () => {
   await question1();
   await question2();
   await question3();
-  fs.writeFileSync("./pills.json", JSON.stringify(pills), 'utf8');
+  const dir = `./pills/${levelSelected}/${newPill.folder}`;
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+  fs.writeFileSync(
+    `./pills/${levelSelected}/${newPill.folder}/README.md`,
+    `### ${newPill.name}`,
+    "utf8"
+  );
+  fs.writeFileSync("./pills.json", JSON.stringify(pills), "utf8");
   rl.close();
 };
 
