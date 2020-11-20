@@ -28,6 +28,8 @@ Then the system will ask you three question
 
 Then the system will create a directory in the pills folder with your pill's README file created, which you will modify for your presentation.
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/33903092/99791067-5aacf200-2b25-11eb-8ba6-5049125ee85d.gif)
+
 ## How to present your pill 🍿
 
 - **Local environment**: The `index.html` has to be served. The VSCode extension [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
