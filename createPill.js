@@ -71,6 +71,7 @@ const main = async () => {
     "utf8"
   );
   fs.writeFileSync("./pills.json", JSON.stringify(pills), "utf8");
+  console.log('Your pill has been added with success!')
   rl.close();
 };
 
