@@ -5,9 +5,9 @@ var util = require("util");
 const readline = require("readline");
 
 const newPill = { name: "", folder: "" };
-
-let rawdata = fs.readFileSync("./pills.json");
-let pills = JSON.parse(rawdata);
+let rawData = fs.readFileSync("./pills.json");
+let pills = JSON.parse(rawData);
+const levels = Object.keys(pills);
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -18,7 +18,7 @@ const question1 = () => {
   return new Promise((resolve, reject) => {
     rl.question("What's your pill name? ", (answer) => {
       console.log(`Pill's name: ${answer}`);
-      pills.name = answer;
+      newPill.name = answer;
       resolve();
     });
   });
@@ -26,20 +26,39 @@ const question1 = () => {
 
 const question2 = () => {
   return new Promise((resolve, reject) => {
-    rl.question("How would you like to name your pill's folder ? ", (answer) => {
-      console.log(`Pill's folder: ${answer}`);
-      pills.folder = answer;
-      resolve();
-    });
+    rl.question(
+      "How would you like to name your pill's folder ? ",
+      (answer) => {
+        console.log(`Pill's folder: ${answer}`);
+        newPill.folder = answer;
+        resolve();
+      }
+    );
+  });
+};
+
+const question3 = () => {
+  return new Promise((resolve, reject) => {
+    rl.question(
+      `Is ${levels[0]} [0] - ${levels[1]} [1] - ${levels[2]} [2] `,
+      (answer) => {
+        console.log(`Pill's level: ${answer}`);
+        pills = {
+          ...pills,
+          [levels[answer]]: [...pills[levels[answer]], newPill],
+        };
+        resolve();
+      }
+    );
   });
 };
 
 const main = async () => {
   await question1();
   await question2();
-  //fs.writeFileSync('./temp.js', 'var obj = ' + util.inspect(obj) , 'utf-8')
+  await question3();
+  fs.writeFileSync("./pills.json", JSON.stringify(pills), 'utf8');
   rl.close();
 };
 
 main();
-
