@@ -7,13 +7,17 @@ body {
   background-color: #d4d4d442;
 }
 
-a {
+li {
   cursor: pointer;
   text-decoration: underline;
 }
 
-a:hover {
+li:hover {
   color: #007bff;
+}
+
+ol, ul {
+  padding: 0;
 }
 
 .burger {
