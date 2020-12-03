@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="guidesmiths js pills" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guidesmiths - JS Pills</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -18,7 +20,7 @@
     <main id="main">
       <span
         class="burger"
-        style="font-size: 30px; cursor: pointer;"
+        style="font-size: 30px; cursor: pointer"
         onclick="openNav()"
         >&#9776;</span
       >
@@ -33,50 +35,23 @@
             🇬🇧 Have you taken your pill ?
           </div>
         </div>
+        <a href="#" aria-label="scroll" class="scroll-down" address="true"></a>
       </div>
-      <section class="pills-sections">
+      <section class="pills-sections ok">
         <div class="links">
           <div class="advanced grow">
-            <h3>Advanced 💊</h3>
-            <a onclick="setIfFrameURL('./advanced/merging-arrays/README.md')"
-              >Merging-arrays</a
-            >
-            <a onclick="setIfFrameURL('./advanced/dedupe-arrays/README.md')"
-              >3 ways to deduplicate arrays</a
-            >
-            <a onclick="setIfFrameURL('./advanced/using-!!operator/README.md')"
-              >Convert to boolean using !! operator</a
-            >
-            <a onclick="setIfFrameURL('./advanced/falsey-values/README.md')"
-              >Remove falsey elements from an array</a
-            >
-            <a onclick="setIfFrameURL('./advanced/clone-objects/README.md')"
-              >Clone Javascript Objects</a
-            >
+            <h2>Advanced 💊</h2>
           </div>
           <div class="pro grow">
-            <h3>Pro 💊</h3>
-            <a onclick="setIfFrameURL('./pro/currying/README.md')"
-              >Currying</a
-            >
-            <a onclick="setIfFrameURL('./pro/array-of-consecutive-numbers/README.md')"
-              >Creating an array of consecutive numbers</a
-            >
+            <h2>Pro 💊</h2>
           </div>
           <div class="basic grow">
-            <h3>Basic 💊</h3>
-            <a onclick="setIfFrameURL('./basic/reduce/README.md')">Reduce</a>
-            <a
-              onclick="setIfFrameURL('./basic/Array.prototype.every/README.md')"
-              >Array.prototype.every</a
-            >
-            <a onclick="setIfFrameURL('./basic/replaceAll/README.md')">.replaceAll</a>
-            <a onclick="setIfFrameURL('./basic/map/README.md')">Map</a>
+            <h2>Basic 💊</h2>
           </div>
         </div>
         <div id="secret"></div>
         <div id="content">
-          <h1 style="text-align: center;">
+          <h1 style="text-align: center">
             Welcome to the Guidesmiths JS pills page, select a pill to start
           </h1>
         </div>
@@ -89,15 +64,13 @@
         >
         <div id="time"></div>
         <audio id="audioBell">
-          <source src="./assets/bell.mp3" type="audio/mpeg" preload>
+          <source src="./assets/bell.mp3" type="audio/mpeg" preload />
         </audio>
         <button onclick="play()">Start</button>
         <button onclick="pause()">Pause</button>
         <button onclick="reset()">Reset</button>
         <div class="javi-comic">
-          <div class="speech-bubble">
-            Let's start the pill!! 🎉
-          </div>
+          <div class="speech-bubble">Let's start the pill!! 🎉</div>
         </div>
         <div class="pill-animation">
           <img src="./assets/Javi.png" alt="guidesmiths" id="javi" />
@@ -109,6 +82,11 @@
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/navbarListeners.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/createLinks.js"></script>
+    <script src="./js/setIfFrame.js"></script>
+    <script src="./js/onLoad.js"></script>
   </body>
 </html>

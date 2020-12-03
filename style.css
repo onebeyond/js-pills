@@ -7,9 +7,17 @@ body {
   background-color: #d4d4d442;
 }
 
-a {
+li {
   cursor: pointer;
   text-decoration: underline;
+}
+
+li:hover {
+  color: #007bff;
+}
+
+ol, ul {
+  padding: 0;
 }
 
 .burger {
@@ -135,7 +143,7 @@ a {
 }
 
 code {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border-radius: 0.3rem;
   padding: 4px 5px 5px;
   white-space: nowrap;
@@ -236,7 +244,6 @@ button {
   height: 20px;
   width: 20px;
   border-radius: 100%;
-  background-image: url("./assets/ibuprofeno.png");
 }
 
 .speech-bubble-felipe {
@@ -335,16 +342,70 @@ table {
   border-spacing: 0;
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
-
-.blinking {
-    animation:blinkingText 1.2s infinite;
+.grow {
+  transition: all 0.2s ease-in-out;
 }
-@keyframes blinkingText{
-    0%{     color: #fff;    }
-    49%{    color: #fff; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #fff;    }
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 7px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
