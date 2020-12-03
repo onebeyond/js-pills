@@ -152,6 +152,16 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "arturogbruno",
+      "name": "Arturo G. Bruno",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/57541142?v=4",
+      "profile": "https://github.com/arturogbruno",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
