@@ -1,9 +1,7 @@
 # GuideSmiths JS pills 💊
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -78,11 +76,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.gentooxativa.com"><img src="https://avatars0.githubusercontent.com/u/615612?v=4" width="100px;" alt=""/><br /><sub><b>Jose Vicente Giner Sanchez</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=GentooXativa" title="Code">💻</a> <a href="#content-GentooXativa" title="Content">🖋</a></td>
     <td align="center"><a href="https://lucas1004jx.github.io/index.html"><img src="https://avatars1.githubusercontent.com/u/26882101?v=4" width="100px;" alt=""/><br /><sub><b>xin jin</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=lucas1004jx" title="Code">💻</a> <a href="#content-lucas1004jx" title="Content">🖋</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/arturogbruno"><img src="https://avatars3.githubusercontent.com/u/57541142?v=4" width="100px;" alt=""/><br /><sub><b>Arturo G. Bruno</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=arturogbruno" title="Code">💻</a> <a href="#content-arturogbruno" title="Content">🖋</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
