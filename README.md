@@ -1,7 +1,7 @@
 # GuideSmiths JS pills 💊
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -78,6 +78,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/arturogbruno"><img src="https://avatars3.githubusercontent.com/u/57541142?v=4" width="100px;" alt=""/><br /><sub><b>Arturo G. Bruno</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=arturogbruno" title="Code">💻</a> <a href="#content-arturogbruno" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/NExtremadouro"><img src="https://avatars0.githubusercontent.com/u/48827958?v=4" width="100px;" alt=""/><br /><sub><b>NExtremadouro</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=NExtremadouro" title="Code">💻</a> <a href="#content-NExtremadouro" title="Content">🖋</a></td>
   </tr>
 </table>
 
