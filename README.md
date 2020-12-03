@@ -1,30 +1,50 @@
 # GuideSmiths JS pills 💊
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
 
 ## Live demo
-https://guidesmiths.github.io/js-pills/
 
-### How do I create a pill? 📝
+[guidesmiths.github.io/js-pills/](https://guidesmiths.github.io/js-pills/)
 
-To create a pill the only thing that you need is to write a README file into the corresponded folder (Advances, Pro or Basic) then create a link in `index.html`.
+## How do I create a pill? 📝
+
+To create a pill the only thing that you need to do is execute the `createPill.js` file from the main directory with node like this:
+
+```
+node createPill.js
+```
+
+Then the system will ask you three question
+
+1. the name of your pill
+2. the name of the folder to add in the pills directory
+3. the level of your pill
+
+Then the system will create a directory in the pills folder with your pill's README file created, which you will modify for your presentation.
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/33903092/99791067-5aacf200-2b25-11eb-8ba6-5049125ee85d.gif)
 
 ## How to present your pill 🍿
 
 - **Local environment**: The `index.html` has to be served. The VSCode extension [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
 
 - **Github pages**: Once you have created your pill's README and added a link in the `index.html` than push it into your repository and follow the [github pages](https://docs.github.com/es/github/working-with-github-pages/about-github-pages) instructions.  
-**Deploys**: Check if your last commit is ready [here](https://github.com/guidesmiths/js-pills/deployments). 
+  **Deploys**: Check if your last commit is ready [here](https://github.com/guidesmiths/js-pills/deployments).
 
 ## Be creative ✨
 
-You can add features to this project 😵!! For Example: 
-- [x] Create a kind of alarm when the timer ends! 
-- [ ] Create a function that automatically adds links into `index.html` of the created README 
+You can add features to this project 😵!! For Example:
+
+- [x] Create a kind of alarm when the timer ends!
+- [x] Create a function that automatically adds links into `index.html` of the created README
 - [ ] Add animation when the timer starts
+- [ ] Mobile version
 
 Or if you have any other idea that's perfect! Feel free also to make some refactors. 😬
 
@@ -62,6 +82,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
