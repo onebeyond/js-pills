@@ -162,6 +162,16 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "NExtremadouro",
+      "name": "NExtremadouro",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/48827958?v=4",
+      "profile": "https://github.com/NExtremadouro",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
