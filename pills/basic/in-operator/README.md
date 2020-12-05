@@ -1,8 +1,11 @@
-## Definition
+
+# In operator [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in)
+
+## Definition 📚
 
 The `in` operator returns true if the specified property is in the specified object or its prototype chain.
 
-## Syntax
+## Syntax 📝
 
 ```js
 prop in object
@@ -16,9 +19,9 @@ Parameters:
 - `object`: Object to check if it (or its prototype chain) contains the property with specified name (prop).
 - `prop`: A string or symbol representing a property name or array index (non-symbols will be coerced to strings).
 
-## Examples of usage
+## Examples of usage 📐
 
-###  Basic usage Objects
+###  Basic usage Objects 🗝
 
 First, a basic example that check if a property is in an object:
 
@@ -36,7 +39,7 @@ console.log('irrelevant' in car); // false
 
 We can see that in operator returns a boolean true when the property exists in an object.
 
-### Basic usage Arrays
+### Basic usage Arrays 🛋
 
 We can also do the same using `in` operator with arrays:
 
@@ -51,7 +54,7 @@ console.log('length' in trees); //  true (length is an Array property)
 
 Which is useful for checking the position of elements in an array
 
-### Object right side operator
+### Object right side operator 🛀
 
 You must specify an object on the right side of the in operator.
 For example, you can specify a string created with the String constructor, but you cannot specify a string literal.
@@ -64,7 +67,7 @@ let color2 = 'coral'
 'length' in color2 // generates an error (color2 is not a String object)
 ```
 
-### Using in with deleted or undefined properties
+### Using in with deleted or undefined properties 🔪
 
 If you delete a property with the `delete` operator, the `in` operator returns `false` for that property.
 
@@ -102,12 +105,9 @@ let empties = new Array(3).fill(undefined)
 ```
 To avoid this, make sure a new array is always filled with non-empty values
 
-## Browser compatibility
+## Browser compatibility 🔌
 
-| Browser | Chrome | Edge | IE | Firefox | Opera | Safari |
-|:--------|:------:|:----:|:--:|:-------:|:-----:|:------:|
-| in      | 1      | 12   | 1  | 1       | 4     | 1      |
-
-## References
-
-- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in): for more information about the syntax and examples.
+|        | ✅     | ✅   | ✅      | ✅       | ✅   | ✅    |
+| ------ | ------ | ---- | ------- | -------- | ----- | ------ |
+| 💻     | Chrome | Edge | Firefox | Explorer | Opera | Safari |
+| in     | 1      | 12   | 1       | 1        | 4     | 1      |
