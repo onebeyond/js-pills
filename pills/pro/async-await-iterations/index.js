@@ -1,37 +1,24 @@
-### Async Await iterations
-
-Do you want to make asynchronous request in an specific order ? Using async await can be tricky. Let's see why.
-
-### The bad way (synchronous loop)
-
-Let's do a dummy example let's say we want to get the quotes for a bunch of tokens y a crypto market.
-
-If we run await in a regular forEach loop you will get the results of your request in random order since forEach only supports synchronous functions.
-
-```js
 const urlApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
 const pairs =  ['BTCUSDT', 'ETHUSDT', 'NEOUSDT', 'XRPUSDT', 'DAIUSDT'];
 
 pairs.forEach( async symbol => {
-  const result = await fetch(`${urlApi}${symbol}`);
+  const result = await fetch(`${url}${symbol}`);
   console.log(symbol, ':', result);
 })
 
 console.log('Start Fetching Prices');
-```
 
-Same happens with the classic imperative for loop, will not reproduce the example since I confident you already got the point.
+const getPricesSync = async (pairs, url) => {
+  while (pairs.length > 0) {
+    const symbol = symbol.shift();
+    const result = await fetch(`${url}${symbol}`);
+    console.log(symbol, ':', result);
+  }
+};s
 
-```Js
-for (var i=0; i < array.length; i++) {
-  var item = array[i];
-  // do something with item
-}
-```
+getPricesSync(pairs, urlApi);
 
-### The while Way
 
-```js
 const urlApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
 const pairs =  ['BTCUSDT', 'ETHUSDT', 'NEOUSDT', 'XRPUSDT', 'DAIUSDT'];
 
@@ -44,14 +31,9 @@ const getPricesSync = async (pairs, url) => {
 };
 
 getPricesSync(pairs, urlApi);
-```
-
-### The for of way
-
-The classic for of to the rescue. For of can run both synchronous and asynchronous functions.
 
 
-```js
+
 const urlApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
 const pairs =  ['BTCUSDT', 'ETHUSDT', 'NEOUSDT', 'XRPUSDT', 'DAIUSDT'];
 
@@ -63,13 +45,8 @@ const getPricesSync = async (pairs, url) => {
 };
 
 getPricesSync(pairs, urlApi);
-```
 
-### The for await way
 
-Similar case when we want to loop an array of promises sequentially.
-
-```js
 const urlApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
 const pairs =  ['BTCUSDT', 'ETHUSDT', 'NEOUSDT', 'XRPUSDT', 'DAIUSDT'];
 
@@ -80,10 +57,3 @@ const getPricesSync = async (promises) => {
     console.log('result', result);
   }
 };
-
-getPricesSync(pairsPromises);
-```
-
-### Bonus
-
-There are still some awaits that can be used in other iterations as "map", "filter", "reduce" but this is for another pill since some won't work and other can with some workarounds.
