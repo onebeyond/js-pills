@@ -1,6 +1,6 @@
 ### Async Await iterations
 
-Do you want to make asynchronous request in an specific order ? Using async await can be tricky. Let's see why.
+Do you want to make asynchronous request sequentially? Using async await can be tricky. Let's see why.
 
 ### The bad way (synchronous loop)
 
@@ -67,7 +67,7 @@ getPricesSync(pairs, urlApi);
 
 ### The for await way
 
-Similar case when we want to loop an array of promises sequentially.
+Similar for of case when we want to loop an array of promises sequentially.
 
 ```js
 const urlApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
@@ -87,3 +87,8 @@ getPricesSync(pairsPromises);
 ### Bonus
 
 There are still some awaits that can be used in other iterations as "map", "filter", "reduce" but this is for another pill since some won't work and other can with some workarounds.
+
+
+### References
+
+[https://zellwk.com/blog/async-await-in-loops/](https://zellwk.com/blog/async-await-in-loops/)s
