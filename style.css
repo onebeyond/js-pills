@@ -16,7 +16,8 @@ li:hover {
   color: #007bff;
 }
 
-ol, ul {
+ol,
+ul {
   padding: 0;
 }
 
