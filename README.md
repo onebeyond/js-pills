@@ -17,7 +17,11 @@ This repo contains all the JS pills prepared by our GS members.
 To create a pill the only thing that you need to do is execute the `createPill.js` file from the main directory with node like this:
 
 ```
-node createPill.js
+npm run create:pill
+```
+or
+```
+node ./js/createPill.js
 ```
 
 Then the system will ask you three question

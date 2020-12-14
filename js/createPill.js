@@ -28,7 +28,7 @@ const question1 = () => {
 const question2 = () => {
   return new Promise((resolve, reject) => {
     rl.question(
-      "How would you like to name your pill's folder ? ",
+      "How would you like to call your pill's folder ? ",
       (answer) => {
         console.log(`Pill's folder: ${answer}`);
         newPill.folder = answer;

@@ -1,0 +1,31 @@
+{
+  "name": "js-pills",
+  "version": "1.0.0",
+  "description": "<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-) <!-- ALL-CONTRIBUTORS-BADGE:END -->",
+  "main": "index.js",
+  "scripts": {
+    "create:pill": "node ./js/createPill.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidesmiths/js-pills.git"
+  },
+  "keywords": [
+    "guidesmiths"
+  ],
+  "author": "guidesmiths",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guidesmiths/js-pills/issues"
+  },
+  "homepage": "https://github.com/guidesmiths/js-pills#readme",
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run buildHtml"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.0"
+  }
+}
