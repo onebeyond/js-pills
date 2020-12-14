@@ -21,7 +21,13 @@
   },
   "homepage": "https://github.com/guidesmiths/js-pills#readme",
   "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  },
   "devDependencies": {
+    "husky": "^4.3.0",
     "jest": "^26.6.3"
   }
 }
