@@ -4,7 +4,8 @@
   "description": "<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-) <!-- ALL-CONTRIBUTORS-BADGE:END -->",
   "main": "index.js",
   "scripts": {
-    "create:pill": "node ./js/createPill.js"
+    "create:pill": "node ./js/createPill.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,12 +21,7 @@
   },
   "homepage": "https://github.com/guidesmiths/js-pills#readme",
   "dependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run buildHtml"
-    }
-  },
   "devDependencies": {
-    "husky": "^4.3.0"
+    "jest": "^26.6.3"
   }
 }
