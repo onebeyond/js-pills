@@ -7,12 +7,11 @@ body {
   background-color: #d4d4d442;
 }
 
-li {
+.grow li {
   cursor: pointer;
   text-decoration: underline;
 }
-
-li:hover {
+.grow li:hover {
   color: #007bff;
 }
 
@@ -323,6 +322,10 @@ body td {
 ol,
 ul {
   list-style: none;
+}
+
+#content ul {
+  list-style: inside;
 }
 
 blockquote,
