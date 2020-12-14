@@ -152,6 +152,36 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "arturogbruno",
+      "name": "Arturo G. Bruno",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/57541142?v=4",
+      "profile": "https://github.com/arturogbruno",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    },
+    {
+      "login": "NExtremadouro",
+      "name": "NExtremadouro",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/48827958?v=4",
+      "profile": "https://github.com/NExtremadouro",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    },
+    {
+      "login": "servatj",
+      "name": "Josep Servat",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3521485?v=4",
+      "profile": "http://servatj.me",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
