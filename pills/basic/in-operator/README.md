@@ -11,8 +11,7 @@ The `in` operator returns true if the specified property is in the specified obj
 prop in object
 
 const object = { prop1: 'value1', prop2: 'value2', prop3: 'value3' };
-console.log('prop1' in object);
-// expected output: true
+'prop1' in object; // expected output: true
 ```
 
 Parameters:
@@ -30,9 +29,9 @@ First, a basic example that check if a property is in an object:
 // Custom objects
 const car = { make: 'Honda', model: 'Accord', year: 1998 };
 
-console.log('make' in car); // true
+'make' in car // true
 
-console.log('irrelevant' in car); // false
+'irrelevant' in car // false
 
 // Predefined objects
 'PI' in Math //  true
@@ -46,11 +45,11 @@ We can also do the same using `in` operator with arrays:
 
 ```js
 let trees = ['redwood', 'bay', 'cedar', 'oak', 'maple']
-console.log(0 in trees); //  true
-console.log(3 in trees); //  true
-console.log(6 in trees); //  false
-console.log('bay' in trees); //  false (you must specify the index number, not the value at that index)
-console.log('length' in trees); //  true (length is an Array property)
+0 in trees //  true
+3 in trees //  true
+6 in trees //  false
+'bay' in trees //  false (you must specify the index number, not the value at that index)
+'length' in trees //  true (length is an Array property)
 ```
 
 Which is useful for checking the position of elements in an array
