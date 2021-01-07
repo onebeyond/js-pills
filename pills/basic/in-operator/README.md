@@ -1,7 +1,7 @@
 
 # In operator [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in)
 
-## Definition 📚
+## Definition 📚 
 
 The `in` operator returns true if the specified property is in the specified object or its prototype chain.
 
@@ -11,7 +11,7 @@ The `in` operator returns true if the specified property is in the specified obj
 prop in object
 
 const object = { prop1: 'value1', prop2: 'value2', prop3: 'value3' };
-console.log('prop' in object);
+console.log('prop1' in object);
 // expected output: true
 ```
 
@@ -25,7 +25,7 @@ Parameters:
 
 First, a basic example that check if a property is in an object:
 
-```js
+```jsx 
 // Custom objects
 const car = { make: 'Honda', model: 'Accord', year: 1998 };
 
