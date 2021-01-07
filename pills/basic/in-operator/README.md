@@ -26,7 +26,7 @@ Parameters:
 
 First, a basic example that check if a property is in an object:
 
-```jsx 
+```js
 // Custom objects
 const car = { make: 'Honda', model: 'Accord', year: 1998 };
 
