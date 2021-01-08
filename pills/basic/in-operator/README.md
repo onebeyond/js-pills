@@ -44,7 +44,7 @@ We can see that in operator returns a boolean true when the property exists in a
 We can also do the same using `in` operator with arrays:
 
 ```js
-let people = new Array('bob', 'jen', 'patrick', 'anne', 'tim');
+let people = new Array('bob', 'trollete', 'patrick', 'anne', 'tim');
 0 in people //  true
 3 in people //  true
 6 in people //  false
@@ -76,7 +76,7 @@ let mycar = {make: 'Honda', model: 'Accord', year: 1998}
 delete mycar.make
 'make' in mycar // false
 
-let people = new Array('bob', 'jen', 'patrick', 'anne', 'tim');
+let people = new Array('bob', 'trollete', 'patrick', 'anne', 'tim');
 delete people[1]
 1 in people  // false
 ```
@@ -88,7 +88,7 @@ let mycar = {make: 'Honda', model: 'Accord', year: 1998}
 mycar.make = undefined
 'make' in mycar   // returns true
 
-let people = new Array('bob', 'jen', 'patrick', 'anne', 'tim');
+let people = new Array('bob', 'trollete', 'patrick', 'anne', 'tim');
 people[4] = undefined
 4 in people  // returns true
 ```
