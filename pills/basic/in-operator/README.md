@@ -44,12 +44,12 @@ We can see that in operator returns a boolean true when the property exists in a
 We can also do the same using `in` operator with arrays:
 
 ```js
-let trees = ['redwood', 'bay', 'cedar', 'oak', 'maple']
-0 in trees //  true
-3 in trees //  true
-6 in trees //  false
-'bay' in trees //  false (you must specify the index number, not the value at that index)
-'length' in trees //  true (length is an Array property)
+let people = new Array('bob', 'jen', 'patrick', 'anne', 'tim');
+0 in people //  true
+3 in people //  true
+6 in people //  false
+'trollete' in people //  false (you must specify the index number, not the value at that index)
+'length' in people //  true (length is an Array property)
 ```
 
 Which is useful for checking the position of elements in an array
@@ -76,9 +76,9 @@ let mycar = {make: 'Honda', model: 'Accord', year: 1998}
 delete mycar.make
 'make' in mycar // false
 
-let trees = new Array('redwood', 'bay', 'cedar', 'oak', 'maple')
-delete trees[1]
-1 in trees  // false
+let people = new Array('bob', 'jen', 'patrick', 'anne', 'tim');
+delete people[1]
+1 in people  // false
 ```
 
 If you set a property to `undefined` but do not delete it, the `in` operator returns `true` for that property.
@@ -88,9 +88,9 @@ let mycar = {make: 'Honda', model: 'Accord', year: 1998}
 mycar.make = undefined
 'make' in mycar   // returns true
 
-let trees = new Array('redwood', 'bay', 'cedar', 'oak', 'maple')
-trees[3] = undefined
-3 in trees  // returns true
+let people = new Array('bob', 'jen', 'patrick', 'anne', 'tim');
+people[4] = undefined
+4 in people  // returns true
 ```
 
 The `in` operator will return `false` for empty array slots. Even if accessing it directly returns `undefined` .
