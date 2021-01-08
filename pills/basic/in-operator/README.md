@@ -61,7 +61,7 @@ For example, you can specify a string created with the String constructor, but y
 
 ```js
 let color1 = new String('green')
-'length' in color1 //  true
+'length' in color1 //  true (color1 is a String object)
 
 let color2 = 'coral'
 'length' in color2 // generates an error (color2 is not a String object)
