@@ -77,8 +77,8 @@ delete mycar.make
 'make' in mycar // false
 
 let trees = new Array('redwood', 'bay', 'cedar', 'oak', 'maple')
-delete trees[3]
-3 in trees  // false
+delete trees[1]
+1 in trees  // false
 ```
 
 If you set a property to `undefined` but do not delete it, the `in` operator returns `true` for that property.
