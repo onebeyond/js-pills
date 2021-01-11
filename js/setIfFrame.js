@@ -13,7 +13,7 @@ function setIfFrameURL(url) {
       "Merging arrays"
     )
       ? `<div class="felipe-comic">
-      <img id="felipe-image" src="./assets/Felipe.png"></img>
+      <img id="felipe-image" src="./assets/img/Felipe.png"></img>
       <div class="speech-bubble-felipe">Poco se habla del merging arrays</div>
       </div>`
       : ``;

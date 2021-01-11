@@ -7,9 +7,17 @@ body {
   background-color: #d4d4d442;
 }
 
-li {
+.grow li {
   cursor: pointer;
   text-decoration: underline;
+}
+.grow li:hover {
+  color: #007bff;
+}
+
+ol,
+ul {
+  padding: 0;
 }
 
 li:hover {
@@ -322,6 +330,10 @@ body td {
 ol,
 ul {
   list-style: none;
+}
+
+#content ul {
+  list-style: inside;
 }
 
 blockquote,

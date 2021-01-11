@@ -1,7 +1,7 @@
 # GuideSmiths JS pills 💊
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -15,7 +15,11 @@ This repo contains all the JS pills prepared by our GS members.
 To create a pill the only thing that you need to do is execute the `createPill.js` file from the main directory with node like this:
 
 ```
-node createPill.js
+npm run create:pill
+```
+or
+```
+node ./js/createPill.js
 ```
 
 Then the system will ask you three question
@@ -79,11 +83,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/arturogbruno"><img src="https://avatars3.githubusercontent.com/u/57541142?v=4" width="100px;" alt=""/><br /><sub><b>Arturo G. Bruno</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=arturogbruno" title="Code">💻</a> <a href="#content-arturogbruno" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/NExtremadouro"><img src="https://avatars0.githubusercontent.com/u/48827958?v=4" width="100px;" alt=""/><br /><sub><b>NExtremadouro</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=NExtremadouro" title="Code">💻</a> <a href="#content-NExtremadouro" title="Content">🖋</a></td>
+    <td align="center"><a href="http://servatj.me"><img src="https://avatars0.githubusercontent.com/u/3521485?v=4" width="100px;" alt=""/><br /><sub><b>Josep Servat</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=servatj" title="Code">💻</a> <a href="#content-servatj" title="Content">🖋</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

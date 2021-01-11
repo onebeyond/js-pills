@@ -1,7 +1,7 @@
 "use strict";
 
-var fs = require("fs");
-var util = require("util");
+const fs = require("fs");
+const util = require("util");
 const readline = require("readline");
 
 const newPill = { name: "", folder: "" };
@@ -28,7 +28,7 @@ const question1 = () => {
 const question2 = () => {
   return new Promise((resolve, reject) => {
     rl.question(
-      "How would you like to name your pill's folder ? ",
+      "How would you like to call your pill's folder ? ",
       (answer) => {
         console.log(`Pill's folder: ${answer}`);
         newPill.folder = answer;
