@@ -4,11 +4,13 @@
  * @param  {string} url - Path of the Readme to render
  */
 function setIfFrameURL(url) {
-  $("#content").load(url, (response) => {
+  $("#content").load(url, (response, status, xhr) => {
     if (status == "error") {
       let msg = "Sorry but there was an error: ";
       console.log(msg + xhr.status + " " + xhr.statusText);
+      setIfFrameURL("./assets/not-found.md");
     }
+    /* 🐣 */
     document.getElementById("secret").innerHTML = response.includes(
       "Merging arrays"
     )
