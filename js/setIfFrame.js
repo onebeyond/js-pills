@@ -4,9 +4,9 @@
  * @param  {string} url - Path of the Readme to render
  */
 function setIfFrameURL(url) {
-  $("#content").load(url, function (response) {
+  $("#content").load(url, (response) => {
     if (status == "error") {
-      var msg = "Sorry but there was an error: ";
+      let msg = "Sorry but there was an error: ";
       console.log(msg + xhr.status + " " + xhr.statusText);
     }
     document.getElementById("secret").innerHTML = response.includes(
@@ -17,7 +17,7 @@ function setIfFrameURL(url) {
       <div class="speech-bubble-felipe">Poco se habla del merging arrays</div>
       </div>`
       : ``;
-    var converter = new showdown.Converter({ tables: true }),
+    let converter = new showdown.Converter({ tables: true }),
       html = converter.makeHtml(response);
     document.getElementById("content").innerHTML = html;
     document.querySelectorAll("pre code").forEach((block) => {

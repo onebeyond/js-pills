@@ -1,7 +1,7 @@
 const images = ["./assets/img/Carlos.png", "./assets/img/Felipe.png"];
 
 const setIfFrameByURL = () => {
-  var url = new URL(window.location.href);
+  let url = new URL(window.location.href);
   const [level, pill] = url.search.split("=");
   if (level !== "" && pill !== "") {
     scrollDown();
@@ -11,9 +11,8 @@ const setIfFrameByURL = () => {
 
 window.onload = function () {
   setIfFrameByURL();
-  const urlParams = new URLSearchParams(window.location.search);
-  window.addEventListener("locationchange", function () {
-    var url = new URL(window.location.href);
+  window.addEventListener("locationchange", () => {
+    let url = new URL(window.location.href);
     const [level, pill] = url.search.split("=");
     setIfFrameURL(`./pills/${level.replace("?", "")}/${pill}/README.md`);
   });

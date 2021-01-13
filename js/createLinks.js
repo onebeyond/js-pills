@@ -2,7 +2,7 @@ function test() {
   return $.getJSON("./pills.json");
 }
 
-$.when(test()).then(function (pills) {
+$.when(test()).then((pills) => {
   const levels = Object.keys(pills);
 
   const onClick = (pill, level) => `

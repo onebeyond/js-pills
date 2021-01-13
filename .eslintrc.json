@@ -1,0 +1,12 @@
+{
+  "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {}
+  },
+  "rules": {
+      "semi": "error",
+      "no-var": "error",
+      "prefer-arrow-callback": "error"
+  }
+}

@@ -1,7 +1,6 @@
 "use strict";
 
 const fs = require("fs");
-const util = require("util");
 const readline = require("readline");
 
 const newPill = { name: "", folder: "" };
@@ -16,7 +15,7 @@ const rl = readline.createInterface({
 });
 
 const question1 = () => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     rl.question("What's your pill name? ", (answer) => {
       console.log(`Pill's name: ${answer}`);
       newPill.name = answer;
@@ -26,7 +25,7 @@ const question1 = () => {
 };
 
 const question2 = () => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     rl.question(
       "How would you like to call your pill's folder ? ",
       (answer) => {
@@ -39,7 +38,7 @@ const question2 = () => {
 };
 
 const question3 = () => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     rl.question(
       `Is ${levels[0]} [0] - ${levels[1]} [1] - ${levels[2]} [2] `,
       (answer) => {
@@ -71,7 +70,7 @@ const main = async () => {
     "utf8"
   );
   fs.writeFileSync("./pills.json", JSON.stringify(pills), "utf8");
-  console.log('Your pill has been added with success!')
+  console.log("Your pill has been added with success!");
   rl.close();
 };
 

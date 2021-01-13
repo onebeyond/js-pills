@@ -18,7 +18,7 @@ function getReadableTime(secs) {
 
 function startTimer(display) {
   isRunning = true;
-  interval = setInterval(function () {
+  interval = setInterval(() => {
     display.textContent = getReadableTime(timer);
     if (--timer < 0) {
       timer = 0;
