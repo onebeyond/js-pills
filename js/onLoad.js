@@ -11,8 +11,11 @@ const setIfFrameByURL = () => {
 };
 
 window.onload = function () {
+  setIfFrameByURL();
   window.addEventListener("locationchange", () => {
-    setIfFrameByURL();
+    let url = new URL(window.location.href);
+    const [level, pill] = url.search.split("=");
+    setIfFrameURL(`./pills/${level.replace("?", "")}/${pill}/README.md`);
   });
 
   document.getElementById("header-image").src =
