@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "create:pill": "node ./js/createPill.js",
+    "dev": "gatsby develop",
     "test": "jest"
   },
   "repository": {
@@ -20,11 +21,24 @@
     "url": "https://github.com/guidesmiths/js-pills/issues"
   },
   "homepage": "https://github.com/guidesmiths/js-pills#readme",
-  "dependencies": {},
+  "dependencies": {
+    "gatsby": "^2.32.3",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.14.1",
+    "gatsby-plugin-typography": "^2.12.0",
+    "gatsby-remark-prismjs": "^3.13.0",
+    "gatsby-source-filesystem": "^2.11.0",
+    "gatsby-transformer-remark": "^2.16.0",
+    "gatsby-transformer-sharp": "^2.12.0",
+    "prismjs": "^1.23.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-wordpress-2016": "^0.16.19"
+  },
   "husky": {
-    "hooks": {
-      "pre-push": "npm run test"
-    }
+    "hooks": {}
   },
   "devDependencies": {
     "eslint": "^7.17.0",
