@@ -7,7 +7,8 @@
     "create:pill": "node ./js/createPill.js",
     "dev": "gatsby develop",
     "test": "jest",
-    "build": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "build": "gatsby build"
   },
   "repository": {
     "type": "git",
