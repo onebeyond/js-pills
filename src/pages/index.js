@@ -3,11 +3,13 @@ import { graphql } from "gatsby";
 
 import Layout from "../layout/layout";
 import Card from "../components/card";
+import SEO from '../components/seo';
 
 export default function Home({ data }) {
   const pills = data.allMarkdownRemark.edges;
   return (
     <Layout>
+      <SEO title="All Pills"/>
       {pills.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
         const description = node.frontmatter.description;

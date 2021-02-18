@@ -2,12 +2,19 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../../layout/layout";
+import SEO from "../../components/seo";
 
-export default function Template({ data }) {
+const Template = ({ data }) => {
   const { markdownRemark } = data;
   const { html } = markdownRemark;
+  const pill = data.markdownRemark;
+
   return (
     <Layout>
+      <SEO
+        title={pill.frontmatter.title}
+        description={pill.frontmatter.description || pill.excerpt}
+      />
       <div className="pill-post-container">
         <div className="pill-post card">
           <div
@@ -18,7 +25,7 @@ export default function Template({ data }) {
       </div>
     </Layout>
   );
-}
+};
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -32,3 +39,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default Template;
