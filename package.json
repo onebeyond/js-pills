@@ -4,7 +4,7 @@
   "description": "<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-) <!-- ALL-CONTRIBUTORS-BADGE:END -->",
   "main": "index.js",
   "scripts": {
-    "create:pill": "node ./js/createPill.js",
+    "create:pill": "node ./scripts/createPill.js",
     "dev": "gatsby develop",
     "test": "jest",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
