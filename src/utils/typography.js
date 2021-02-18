@@ -1,38 +1,7 @@
-import Typography from "typography";
-import Wordpress2016 from "typography-theme-wordpress-2016";
-import "./global.css";
+import Typography from 'typography';
+import './global.css';
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
-    },
-    a: {
-      color: "var(--textLink)",
-    },
-    // gatsby-remark-autolink-headers - don't underline when hidden
-    "a.anchor": {
-      boxShadow: "none",
-    },
-    // gatsby-remark-autolink-headers - use theme colours for the link icon
-    'a.anchor svg[aria-hidden="true"]': {
-      stroke: "var(--textLink)",
-    },
-    hr: {
-      background: "var(--hr)",
-    },
-    p: {
-      color: "var(--textNormal)",
-    },
-    small: {
-      color: "var(textNormal)",
-    },
-  };
-};
-
-delete Wordpress2016.googleFonts;
-
-const typography = new Typography(Wordpress2016);
+const typography = new Typography();
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

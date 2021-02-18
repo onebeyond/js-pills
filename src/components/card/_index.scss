@@ -8,6 +8,8 @@
   padding: 27px;
   min-width: 588px;
   justify-content: space-around;
+  display: flex;
+  align-items: center;
 }
 
 .pill-post {
@@ -27,6 +29,4 @@
   color: var(--card-fore-color);
   box-shadow: 0 3px 5px 1px var(--card-shadow-color);
   border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
 }

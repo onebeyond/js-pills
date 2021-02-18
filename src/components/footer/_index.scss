@@ -5,8 +5,11 @@ footer {
   padding-right: calc((100% - 866px) / 2);
 
   > p {
-    font-size: ".875rem";
-    line-height: "2rem";
+    font-size: '.875rem';
+    line-height: '2rem';
+    > a {
+      color: var(--greyText);
+    }
   }
 }
 
