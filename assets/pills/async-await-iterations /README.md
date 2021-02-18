@@ -1,9 +1,3 @@
----
-slug: "/pill/async-await-iterations"
-date: "2019-05-04"
-title: "Async Await iterations"
-description: "Do you want to make asynchronous request sequentially? Using async await can be tricky. Let's see why."
----
 ### Async Await iterations
 
 Do you want to make asynchronous request sequentially? Using async await can be tricky. Let's see why.
@@ -36,6 +30,8 @@ for (var i=0; i < array.length; i++) {
 ```
 
 ### The while Way
+
+We can run async functions sequentially inside an array
 
 ```js
 const urlApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
