@@ -1,26 +1,6 @@
 body {
-  --bg:#f6f6f6;
-  --textNormal: #222;
-  --textTitle: #222;
-  --textLink: blue;
-  --hr: hsla(0, 0%, 0%, 0.2);
-  --card-back-color: white;
-  --card-fore-color: #000;
-  --card-shadow-color: #efefef;
-
   background-color: var(--bg);
   transition: 0.5s;
-}
-
-body.dark {
-  -webkit-font-smoothing: antialiased;
-
-  --bg: #121212;
-  --textNormal: rgba(255, 255, 255, 0.88);
-  --textTitle: white;
-  --textLink: rgb(134, 165, 49);
-  --hr: hsla(0, 0%, 100%, 0.2);
-  --code-color: #fff;
 }
 
 body.dark td,
@@ -44,62 +24,4 @@ em {
 
 a {
   text-decoration: none;
-}
-
-.page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 120px;
-  background-color: white;
-}
-
-.navbar img {
-  margin: 0;
-}
-
-.logo {
-  width: 360px;
-}
-
-.card {
-  margin-top: 1.5rem;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.3s ease;
-  background: var(--card-back-color);
-  color: var(--card-fore-color);
-  box-shadow: 0 3px 5px 1px var(--card-shadow-color);
-  border-radius: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.preview-card {
-  height: 176px;
-  padding: 27px;
-  min-width: 588px;
-  justify-content: space-around;
-}
-
-.pill-post {
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  padding: 30px;
-  min-width: 992px;
-}
-
-.pill-post-container {
-  display: flex;
-  justify-content: center;
 }

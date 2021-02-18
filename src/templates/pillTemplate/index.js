@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "../layout/layout";
+import Layout from "../../layout/layout";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;

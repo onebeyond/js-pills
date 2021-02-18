@@ -1,8 +1,8 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 
-import { rhythm } from "../utils/typography";
 import Layout from "../layout/layout";
+import Card from "../components/card";
 
 export default function Home({ data }) {
   const pills = data.allMarkdownRemark.edges;
@@ -13,28 +13,12 @@ export default function Home({ data }) {
         const description = node.frontmatter.description;
 
         return (
-          <Link
+          <Card
             key={node.id}
-            style={{ boxShadow: `none`, width: "50%" }}
-            to={node.frontmatter.slug}
-          >
-            <article className="article card preview-card">
-              <span>💊</span>
-              <div style={{ width: "80%"}}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                    padding: rhythm(1 / 8),
-                  }}
-                >
-                  {title}
-                </h3>
-                <p style={{ padding: rhythm(1 / 8), maxWidth: "80%" }}>
-                  {description}
-                </p>
-              </div>
-            </article>
-          </Link>
+            node={node}
+            title={title}
+            description={description}
+          />
         );
       })}
     </Layout>

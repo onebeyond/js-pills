@@ -1,0 +1,33 @@
+.content {
+  padding-left: calc((100% - 882px) / 2);
+  padding-right: calc((100% - 866px) / 2);
+}
+
+.preview-card {
+  height: 176px;
+  padding: 27px;
+  min-width: 588px;
+  justify-content: space-around;
+}
+
+.pill-post {
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 30px;
+  min-width: 992px;
+}
+
+.card {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  background: var(--card-back-color);
+  color: var(--card-fore-color);
+  box-shadow: 0 3px 5px 1px var(--card-shadow-color);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+.pill-post-container {
+  display: flex;
+  justify-content: center;
+
+  > .pill-post-content {
+    font-family: "Roboto Mono";
+  }
+}

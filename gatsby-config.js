@@ -1,12 +1,12 @@
+const settings = require('./src/settings/global.json');
+
 module.exports = {
   pathPrefix: "/js-pills",
   siteMetadata: {
-    title: "",
-    titleTemplate: "",
-    description: "",
-    url: "", // No trailing slash allowed!
-    image: "", // Path to your image you placed in the 'static' folder
-    twitterUsername: "",
+    title: settings.websiteName,
+    description: settings.websiteDescription,
+    siteUrl: settings.websiteUrl,
+    author: "GuideSmiths"
   },
   plugins: [
     {
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/assets/pills`,
+        path: `${__dirname}/content`,
         name: `pills`,
       },
     },
@@ -74,5 +74,6 @@ module.exports = {
     `gatsby-plugin-typography`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`
   ],
 };

@@ -1,12 +1,14 @@
 import React from "react";
 
+import { twitterUrl, githubOrgUrl, linkedinUrl } from "../../settings/global";
+
 const footer = () => {
   return (
     <footer>
       <p>
         <a
           className="footer-link"
-          href=""
+          href={githubOrgUrl}
           rel="noopener noreferrer nofollow"
           target="_blank"
         >
@@ -14,7 +16,7 @@ const footer = () => {
         </a>
         <a
           className="footer-link"
-          href=""
+          href={twitterUrl}
           rel="noopener noreferrer nofollow"
           target="_blank"
         >
@@ -22,7 +24,7 @@ const footer = () => {
         </a>
         <a
           className="footer-link"
-          href=""
+          href={linkedinUrl}
           rel="noopener noreferrer nofollow"
           target="_blank"
         >

@@ -1,3 +1,9 @@
+---
+slug: "/pill/assert-testing"
+date: "2019-05-04"
+title: "Assert Testing"
+description: "The assert module provides a set of assertion functions for verifying invariants."
+---
 ### Assert testing
 The assert module provides a set of assertion functions for verifying invariants.
 
