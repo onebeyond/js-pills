@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/js-pills",
   siteMetadata: {
     title: "",
     titleTemplate: "",
