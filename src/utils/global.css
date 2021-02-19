@@ -3,19 +3,9 @@ body {
   transition: 0.5s;
 }
 
-h3 {
-  font-family: 'Roboto Mono', sans-serif;
-  font-size: 1.5rem;
-}
-
-p {
-  font-family: 'Roboto Mono Medium', sans-serif;
-  font-size: 1.125rem;
-}
-
-
 body.dark td,
 th {
+  background-color: var(--bg);
   color: white;
   border: 1px solid white;
 }
