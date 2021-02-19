@@ -8,18 +8,23 @@ const settings = () => {
   return (
     <Layout>
       <Card className='settings-card'>
-        <ThemeToggler>
-          {({ theme, toggleTheme }) => (
-            <label>
-              <input
-                type='checkbox'
-                onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-                checked={theme === 'dark'}
-              />
-              {'Dark mode'}
-            </label>
-          )}
-        </ThemeToggler>
+        <div className='dark-mode'>
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label className='switch'>
+                <input
+                  type='checkbox'
+                  onChange={e =>
+                    toggleTheme(e.target.checked ? 'dark' : 'light')
+                  }
+                  checked={theme === 'dark'}
+                />
+                <span className='slider round'></span>
+              </label>
+            )}
+          </ThemeToggler>
+          {'Dark mode'}
+        </div>
       </Card>
     </Layout>
   );
