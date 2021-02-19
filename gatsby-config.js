@@ -70,10 +70,24 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'JS-Pills',
+        short_name: 'JS-Pills',
+        start_url: '/',
+        background_color: '#6b37bf',
+        theme_color: '#6b37bf',
+        display: 'minimal-ui',
+        icon: 'assets/guidesmiths-logo.png',
+        crossOrigin: `use-credentials`,
+      },
+    },
+
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
-    'gatsby-plugin-dark-mode'
+    'gatsby-plugin-dark-mode',
   ],
 };
