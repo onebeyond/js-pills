@@ -2,10 +2,12 @@ import React from 'react';
 import Layout from '../../layout/layout';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
+import Card from '../../components/card';
+
 const settings = () => {
   return (
     <Layout>
-      <div className='card settings-card'>
+      <Card className='settings-card'>
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <label>
@@ -18,7 +20,7 @@ const settings = () => {
             </label>
           )}
         </ThemeToggler>
-      </div>
+      </Card>
     </Layout>
   );
 };

@@ -1,0 +1,24 @@
+.pill-article-content {
+  width: 80%;
+}
+
+.content {
+  padding-left: calc((100% - 882px) / 2);
+  padding-right: calc((100% - 866px) / 2);
+}
+
+.preview-card {
+  height: 176px;
+  padding: 27px;
+  min-width: 588px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.pill-post {
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+}

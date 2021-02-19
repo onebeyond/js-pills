@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../layout/layout';
 import Card from '../components/card';
 import SEO from '../components/seo';
+import PillArticle from '../components/pillArticle';
 
 const Home = ({ data }) => {
   const pills = data.allMarkdownRemark.edges;
@@ -15,12 +16,9 @@ const Home = ({ data }) => {
         const description = node.frontmatter.description;
 
         return (
-          <Card
-            key={node.id}
-            node={node}
-            title={title}
-            description={description}
-          />
+          <Card key={node.id}>
+            <PillArticle node={node} title={title} description={description} />
+          </Card>
         );
       })}
     </Layout>
