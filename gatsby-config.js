@@ -1,12 +1,12 @@
 const settings = require('./src/settings/global.json');
 
 module.exports = {
-  pathPrefix: "/js-pills",
+  pathPrefix: '/js-pills',
   siteMetadata: {
     title: settings.websiteName,
     description: settings.websiteDescription,
     siteUrl: settings.websiteUrl,
-    author: "GuideSmiths"
+    author: 'GuideSmiths',
   },
   plugins: [
     {
@@ -23,14 +23,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/assets/img`,
-        name: `img`,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /assets/,
@@ -44,13 +37,13 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               showLineNumbers: false,
               noInlineHighlight: false,
               languageExtensions: [
                 {
-                  language: "superscript",
-                  extend: "javascript",
+                  language: 'superscript',
+                  extend: 'javascript',
                   definition: {
                     superscript_types: /(SuperType)/,
                   },
@@ -62,8 +55,8 @@ module.exports = {
                 },
               ],
               prompt: {
-                user: "root",
-                host: "localhost",
+                user: 'root',
+                host: 'localhost',
                 global: false,
               },
             },
@@ -71,9 +64,14 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-typography`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
 };
