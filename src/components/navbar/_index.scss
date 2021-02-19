@@ -14,16 +14,12 @@
   border-bottom: 1px solid var(--card-shadow-color);
   justify-content: space-between;
 
-  + img {
-    margin: 0;
+  .logo {
+    width: 100%;
   }
 
   .page-container {
     transition: all 0.3s ease;
     width: 100vw;
   }
-}
-
-.logo {
-  width: 360px;
 }

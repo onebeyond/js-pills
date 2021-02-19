@@ -18,6 +18,9 @@ githubTheme.overrideThemeStyles = () => ({
     color: 'var(--textLink)',
     textDecoration: 'none',
   },
+  a: {
+    color: 'var(--textNormal)',
+  },
 });
 
 const typography = new Typography(githubTheme);

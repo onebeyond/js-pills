@@ -74,5 +74,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
+    'gatsby-plugin-dark-mode'
   ],
 };

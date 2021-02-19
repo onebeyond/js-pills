@@ -1,19 +1,19 @@
-import React from "react";
-import { Link } from "gatsby";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSlidersH } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
+
+import Logo from '../../../assets/svg/GS_logo.svg';
 
 const navbar = () => {
   return (
-    <header className="navbar">
-      <Link to={"/"}>
-        <img
-          className="logo"
-          src="https://images.ctfassets.net/5gv1edeicqfs/bomBQDobMA6eyu4CkuYmM/6f5debe74cf1e335bb0be7e3ecbba40b/gs-logo.png"
-          alt=""
-        />
+    <header className='navbar'>
+      <Link to={'/'}>
+        <Logo className="logo"/>
       </Link>
-      <FontAwesomeIcon icon={faSlidersH} size="lg" className="settings"/>
+      <Link to={'/settings'}>
+        <FontAwesomeIcon icon={faSlidersH} size='lg' className='settings' />
+      </Link>
     </header>
   );
 };
