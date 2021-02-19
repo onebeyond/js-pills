@@ -1,6 +1,7 @@
 ---
 slug: "/pill/clone-javascript-objects"
-date: "2019-05-04"
+date: "2019-10-16"
+author: ""
 title: "Clone Javascript Objects"
 description: "Objects in Javascript are references values, so you can't just copy using assing operator `=`"
 ---

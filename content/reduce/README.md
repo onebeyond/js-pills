@@ -1,6 +1,7 @@
 ---
 slug: "/pill/reduce"
-date: "2019-05-01"
+date: "2019-06-26"
+author: "Giorgio Grassini"
 title: "Reduce"
 description: "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value."
 ---

@@ -1,6 +1,7 @@
 ---
 slug: "/pill/set-default-values"
 date: "2019-05-04"
+author: ""
 title: "Set Default Values"
 description: "Here are four ways to set a default value for a variable in JavaScript, each one of them with its pros and cons."
 ---

@@ -1,6 +1,7 @@
 ---
 slug: "/pill/compose"
-date: "2019-05-04"
+date: "2019-11-19"
+author: ""
 title: "compose"
 description: "Compose is a system design principle that allows us to dynamically comibine serveral funcions and returns the resut."
 ---

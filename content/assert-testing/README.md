@@ -1,13 +1,14 @@
 ---
 slug: "/pill/assert-testing"
-date: "2019-05-04"
+date: "2021-02-12"
+author: ""
 title: "Assert Testing"
 description: "The assert module provides a set of assertion functions for verifying invariants."
 ---
-### Assert testing
+# Assert testing
 The assert module provides a set of assertion functions for verifying invariants.
 
-# In case there is a false return from the condition
+### In case there is a false return from the condition
 
 Throws value if value is not undefined or null. This is useful when testing the error argument in callbacks. The stack trace contains all frames from the error passed to ifError() including the potential new frames for ifError() itself.
 
@@ -16,7 +17,7 @@ assert.ifError(new Error());
 // AssertionError [ERR_ASSERTION]: ifError got unwanted exception: Error
 ```
 
-# Compare multiple values
+### Compare multiple values
 
 ```js
 const assert = require('assert').strict;

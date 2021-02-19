@@ -1,6 +1,7 @@
 ---
 slug: "/pill/check-conditions-concurrently"
-date: "2019-05-04"
+date: "2019-11-18"
+author: ""
 title: "Check conditions concurrently"
 description: "_A system is said to be **concurrent** if it can support two or more actions in progress at the same time. A system is said to be **parallel** if it can support two or more actions executing simultaneously._"
 ---

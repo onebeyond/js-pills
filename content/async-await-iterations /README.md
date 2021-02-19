@@ -1,6 +1,7 @@
 ---
 slug: "/pill/async-await-iterations"
-date: "2019-05-04"
+date: "2020-12-14"
+author: ""
 title: "Assert Testing"
 description: "Do you want to make asynchronous request sequentially? Using async await can be tricky. Let's see why."
 ---

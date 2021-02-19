@@ -1,6 +1,7 @@
 ---
 slug: "/pill/converting-to-boolean-using-!!-operator"
-date: "2019-05-04"
+date: "2019-07-30"
+author: ""
 title: "Converting to boolean using `!!` operator"
 description: "JavaScript has a Boolean data type. It can **only** take the values true or false, like YES/NO or ON/OFF"
 ---

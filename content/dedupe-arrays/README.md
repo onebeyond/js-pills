@@ -1,6 +1,7 @@
 ---
 slug: "/pill/dedupe-arrays"
-date: "2019-05-04"
+date: "2020-07-03"
+author: ""
 title: "Dedupe arrays"
 description: "Different ways to remove duplicates from an array"
 ---

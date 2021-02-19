@@ -1,6 +1,7 @@
 ---
 slug: "/pill/in-operator"
-date: "2019-05-04"
+date: "2020-12-05"
+author: ""
 title: "In operator"
 description: "The `in` operator returns true if the specified property is in the specified object or its prototype chain."
 ---

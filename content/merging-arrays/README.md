@@ -1,6 +1,7 @@
 ---
 slug: "/pill/merging-arrays"
-date: "2019-05-04"
+date: "2019-06-26"
+author: ""
 title: "Merging arrays"
 description: "If you need to merge two arrays you can use the Array.concat()"
 ---

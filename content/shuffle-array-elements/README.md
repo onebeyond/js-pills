@@ -1,6 +1,7 @@
 ---
 slug: "/pill/shuffle-an-arrays-elements"
-date: "2019-05-04"
+date: "2020-12-03"
+author: ""
 title: "Shuffle an array's elements"
 description: "Shuffling an array consists on randomly re-arrange the content of that structure. A simple and easy way to shuffle the elements of an array is the following:"
 ---

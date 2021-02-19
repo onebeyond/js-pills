@@ -1,6 +1,7 @@
 ---
 slug: "/pill/currying"
-date: "2019-05-04"
+date: "2020-07-09"
+author: ""
 title: "Currying"
 description: "This is a technique which involves converting a function which takes multiple arguments into a series of smaller cascaded functions which each take a single argument and return a function, except for the last cascaded function which returns the final result."
 ---

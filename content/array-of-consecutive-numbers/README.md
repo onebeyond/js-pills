@@ -1,6 +1,7 @@
 ---
 slug: "/pill/creating-an-array-of-consecutive-numbers"
-date: "2019-05-04"
+date: "2020-10-29"
+author: ""
 title: "Creating an array of consecutive numbers"
 description: "This is a collection of examples on how we can create an <b>array of consecutive numbers from 1 to n</b> in JavaScript, from the classic for loop to the ES6 Array class methods."
 ---

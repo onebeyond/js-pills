@@ -1,6 +1,7 @@
 ---
 slug: "/pill/remove-falsy-values-from-an-array"
-date: "2019-05-04"
+date: "2019-08-17"
+author: ""
 title: "Remove falsy values from an array"
 description: "Remove falsy values from an array"
 ---

@@ -1,6 +1,7 @@
 ---
 slug: "/pill/map"
 date: "2019-05-04"
+author: ""
 title: "Map"
 description: "The `map()` method creates a new array with the results of applying a function on every element of an original array without mutating it."
 ---
