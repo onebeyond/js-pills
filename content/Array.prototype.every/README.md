@@ -1,6 +1,6 @@
 ---
 slug: "/pill/array-prototype-every()"
-date: "2019-06-26"
+date: "2020-06-26"
 author: ""
 title: "Array.prototype.every()"
 description: "This method tests if all the elements in array meets the condition in the provided function."

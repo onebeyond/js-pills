@@ -1,6 +1,6 @@
 ---
 slug: "/pill/replace-all"
-date: "2019-01-16"
+date: "2021-01-16"
 author: ""
 title: "Replace all"
 description: "We're presenting several ways to replace all the occurrences of a substring within a string in Javascript."

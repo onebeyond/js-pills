@@ -1,6 +1,6 @@
 ---
 slug: "/pill/console-methods-explained"
-date: "2019-11-18"
+date: "2020-11-18"
 author: ""
 title: "Console methods explained"
 description: "Console methods explained"
