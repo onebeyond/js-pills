@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSlidersH } from '@fortawesome/free-solid-svg-icons'
 
 const navbar = () => {
   return (
@@ -11,6 +13,7 @@ const navbar = () => {
           alt=""
         />
       </Link>
+      <FontAwesomeIcon icon={faSlidersH} size="lg" className="settings"/>
     </header>
   );
 };

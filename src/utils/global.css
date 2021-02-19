@@ -3,8 +3,7 @@ body {
   transition: 0.5s;
 }
 
-body.dark td,
-th {
+body.dark {
   background-color: var(--bg);
   color: white;
   border: 1px solid white;

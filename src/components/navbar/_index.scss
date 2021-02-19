@@ -12,6 +12,7 @@
   padding-left: calc((100% - 882px) / 2);
   padding-right: calc((100% - 866px) / 2);
   border-bottom: 1px solid var(--card-shadow-color);
+  justify-content: space-between;
 
   + img {
     margin: 0;
