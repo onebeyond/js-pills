@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../../layout/layout';
+import Layout from '../../layouts/mainLayout';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 
-import Card from '../../components/card';
+import Card from '../../layouts/cardLayout';
 
 const settings = () => {
   return (

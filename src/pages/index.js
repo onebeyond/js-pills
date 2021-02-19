@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../layout/layout';
-import Card from '../components/card';
+import Layout from '../layouts/mainLayout';
+import Card from '../layouts/cardLayout';
 import SEO from '../components/seo';
 import PillArticle from '../components/pillArticle';
 

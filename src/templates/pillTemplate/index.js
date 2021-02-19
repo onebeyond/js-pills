@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../../layout/layout';
+import Layout from '../../layouts/mainLayout';
 import SEO from '../../components/seo';
-import Card from '../../components/card';
+import Card from '../../layouts/cardLayout';
 
 const Template = ({ data }) => {
   const { markdownRemark } = data;
