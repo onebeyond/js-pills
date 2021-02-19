@@ -1,11 +1,7 @@
 # GuideSmiths JS pills 💊
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<<<<<<< HEAD
-[![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
-=======
 [![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
->>>>>>> 3c96215a78e7148137d1d7637a336b0fb03d7459
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -35,29 +31,6 @@ Then the system will ask you three question
 Then the system will create a directory in the pills folder with your pill's README file created, which you will modify for your presentation.
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/33903092/99791067-5aacf200-2b25-11eb-8ba6-5049125ee85d.gif)
-
-## How to present your pill 🍿
-
-- **Local environment**: The `index.html` has to be served. The VSCode extension [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
-
-- **Github pages**: Once you have created your pill's README and added a link in the `index.html` than push it into your repository and follow the [github pages](https://docs.github.com/es/github/working-with-github-pages/about-github-pages) instructions.  
-  **Deploys**: Check if your last commit is ready [here](https://github.com/guidesmiths/js-pills/deployments).
-
-## Be creative ✨
-
-You can add features to this project 😵!! For Example:
-
-- [x] Create a kind of alarm when the timer ends!
-- [x] Create a function that automatically adds links into `index.html` of the created README
-- [ ] Add animation when the timer starts
-- [ ] Mobile version
-
-Or if you have any other idea that's perfect! Feel free also to make some refactors. 😬
-
-## Contacts 📨
-
-For any questions on how to create your pill or add a feature, please contact me! (I'm Giorgio)
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -85,17 +58,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://lucas1004jx.github.io/index.html"><img src="https://avatars1.githubusercontent.com/u/26882101?v=4?s=100" width="100px;" alt=""/><br /><sub><b>xin jin</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=lucas1004jx" title="Code">💻</a> <a href="#content-lucas1004jx" title="Content">🖋</a></td>
   </tr>
   <tr>
-<<<<<<< HEAD
-    <td align="center"><a href="https://github.com/arturogbruno"><img src="https://avatars3.githubusercontent.com/u/57541142?v=4" width="100px;" alt=""/><br /><sub><b>Arturo G. Bruno</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=arturogbruno" title="Code">💻</a> <a href="#content-arturogbruno" title="Content">🖋</a></td>
-    <td align="center"><a href="https://github.com/NExtremadouro"><img src="https://avatars0.githubusercontent.com/u/48827958?v=4" width="100px;" alt=""/><br /><sub><b>NExtremadouro</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=NExtremadouro" title="Code">💻</a> <a href="#content-NExtremadouro" title="Content">🖋</a></td>
-    <td align="center"><a href="http://servatj.me"><img src="https://avatars0.githubusercontent.com/u/3521485?v=4" width="100px;" alt=""/><br /><sub><b>Josep Servat</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=servatj" title="Code">💻</a> <a href="#content-servatj" title="Content">🖋</a></td>
-=======
     <td align="center"><a href="https://github.com/arturogbruno"><img src="https://avatars3.githubusercontent.com/u/57541142?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arturo G. Bruno</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=arturogbruno" title="Code">💻</a> <a href="#content-arturogbruno" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/NExtremadouro"><img src="https://avatars0.githubusercontent.com/u/48827958?v=4?s=100" width="100px;" alt=""/><br /><sub><b>NExtremadouro</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=NExtremadouro" title="Code">💻</a> <a href="#content-NExtremadouro" title="Content">🖋</a></td>
     <td align="center"><a href="http://servatj.me"><img src="https://avatars0.githubusercontent.com/u/3521485?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Josep Servat</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=servatj" title="Code">💻</a> <a href="#content-servatj" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/bounteous"><img src="https://avatars.githubusercontent.com/u/16175933?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bounteous</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=bounteous" title="Code">💻</a> <a href="#content-bounteous" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/davidubuntu"><img src="https://avatars.githubusercontent.com/u/11554573?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ddiezr</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=davidubuntu" title="Code">💻</a> <a href="#content-davidubuntu" title="Content">🖋</a></td>
->>>>>>> 3c96215a78e7148137d1d7637a336b0fb03d7459
   </tr>
 </table>
 
