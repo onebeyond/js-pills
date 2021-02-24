@@ -83,7 +83,20 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        fields: [`title`],
+        resolvers: {
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            description: node => node.frontmatter.description,
+            slug: node => node.frontmatter.slug,
+          },
+        },
+        filter: node => node.frontmatter.tags !== 'exempt',
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
