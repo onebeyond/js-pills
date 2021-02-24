@@ -3,18 +3,33 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
 
+import { StaticQuery, graphql } from 'gatsby';
+import Search from '../search';
+
 import Logo from '../../../assets/svg/GS_logo.svg';
 
 const navbar = () => {
   return (
-    <header className='navbar'>
-      <Link to={'/'}>
-        <Logo className="logo"/>
-      </Link>
-      <Link to={'/settings'}>
-        <FontAwesomeIcon icon={faSlidersH} size='lg' className='settings' />
-      </Link>
-    </header>
+    <StaticQuery
+      query={graphql`
+        query SearchIndexQuery {
+          siteSearchIndex {
+            index
+          }
+        }
+      `}
+      render={data => (
+        <header className='navbar'>
+          <Link to={'/'}>
+            <Logo className='logo' />
+          </Link>
+          <Search searchIndex={data.siteSearchIndex.index} />
+          <Link to={'/settings'}>
+            <FontAwesomeIcon icon={faSlidersH} size='lg' className='settings' />
+          </Link>
+        </header>
+      )}
+    />
   );
 };
 
