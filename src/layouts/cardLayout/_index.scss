@@ -1,0 +1,10 @@
+.card {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  background: var(--card-back-color);
+  color: var(--card-fore-color);
+  box-shadow: 0 3px 5px 1px var(--card-shadow-color);
+  border-radius: 0.5rem;
+}

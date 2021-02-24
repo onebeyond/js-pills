@@ -1,0 +1,21 @@
+footer {
+  margin: 3.5rem 0.5rem 0;
+  min-height: 9rem;
+  padding-left: calc((100% - 882px) / 2);
+  padding-right: calc((100% - 866px) / 2);
+
+  .footer-link {
+    + .footer-link {
+      margin-left: 1rem;
+    }
+  }
+
+  > p {
+    font-size: '.875rem';
+    line-height: '2rem';
+    > a {
+      color: var(--greyText);
+      margin: 0;
+    }
+  }
+}

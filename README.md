@@ -31,29 +31,6 @@ Then the system will ask you three question
 Then the system will create a directory in the pills folder with your pill's README file created, which you will modify for your presentation.
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/33903092/99791067-5aacf200-2b25-11eb-8ba6-5049125ee85d.gif)
-
-## How to present your pill 🍿
-
-- **Local environment**: The `index.html` has to be served. The VSCode extension [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is a possible solution.
-
-- **Github pages**: Once you have created your pill's README and added a link in the `index.html` than push it into your repository and follow the [github pages](https://docs.github.com/es/github/working-with-github-pages/about-github-pages) instructions.  
-  **Deploys**: Check if your last commit is ready [here](https://github.com/guidesmiths/js-pills/deployments).
-
-## Be creative ✨
-
-You can add features to this project 😵!! For Example:
-
-- [x] Create a kind of alarm when the timer ends!
-- [x] Create a function that automatically adds links into `index.html` of the created README
-- [ ] Add animation when the timer starts
-- [ ] Mobile version
-
-Or if you have any other idea that's perfect! Feel free also to make some refactors. 😬
-
-## Contacts 📨
-
-For any questions on how to create your pill or add a feature, please contact me! (I'm Giorgio)
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

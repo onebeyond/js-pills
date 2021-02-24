@@ -1,0 +1,20 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--nav-bar-back-color);
+  line-height: 0;
+  box-sizing: border-box;
+  z-index: 1001;
+  height: 120px;
+  padding-left: calc((100% - 882px) / 2);
+  padding-right: calc((100% - 866px) / 2);
+  border-bottom: 1px solid var(--card-shadow-color);
+  justify-content: space-between;
+
+  .logo {
+    width: 100%;
+  }
+}

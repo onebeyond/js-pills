@@ -2,10 +2,13 @@
   "name": "js-pills",
   "version": "1.0.0",
   "description": "<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-) <!-- ALL-CONTRIBUTORS-BADGE:END -->",
-  "main": "index.js",
   "scripts": {
-    "create:pill": "node ./js/createPill.js",
-    "test": "jest"
+    "create:pill": "node ./scripts/createPill.js",
+    "dev": "gatsby develop",
+    "test": "jest",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "build": "gatsby build",
+    "format": "prettier --config .prettierrc --write './**/*.{js,jsx}'"
   },
   "repository": {
     "type": "git",
@@ -20,13 +23,39 @@
     "url": "https://github.com/guidesmiths/js-pills/issues"
   },
   "homepage": "https://github.com/guidesmiths/js-pills#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "gatsby": "^2.32.3",
+    "gatsby-plugin-dark-mode": "^1.1.2",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
+    "gatsby-plugin-manifest": "^2.12.0",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-plugin-sharp": "^2.14.1",
+    "gatsby-plugin-typography": "^2.12.0",
+    "gatsby-remark-prismjs": "^3.13.0",
+    "gatsby-source-filesystem": "^2.11.0",
+    "gatsby-transformer-remark": "^2.16.0",
+    "gatsby-transformer-sharp": "^2.12.0",
+    "prismjs": "^1.23.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.19",
+    "sass": "^1.32.7",
+    "typography": "^0.16.19",
+    "typography-theme-github": "^0.16.19",
+    "typography-theme-sutro": "^0.16.19",
+    "typography-theme-wordpress-2016": "^0.16.19"
+  },
   "husky": {
-    "hooks": {
-      "pre-push": "npm run test"
-    }
+    "hooks": {}
   },
   "devDependencies": {
+    "eslint": "^7.17.0",
+    "gh-pages": "^3.1.0",
     "husky": "^4.3.0",
     "jest": "^26.6.3"
   }
