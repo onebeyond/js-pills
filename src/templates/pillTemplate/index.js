@@ -10,7 +10,6 @@ const Template = ({ data }) => {
   const { html } = markdownRemark;
   const pill = data.markdownRemark;
   const { title, description, date, author } = pill.frontmatter;
-  console.log(pill.frontmatter);
 
   return (
     <Layout>

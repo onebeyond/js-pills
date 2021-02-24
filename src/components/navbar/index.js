@@ -23,10 +23,12 @@ const navbar = () => {
           <Link to={'/'}>
             <Logo className='logo' />
           </Link>
-          <Search searchIndex={data.siteSearchIndex.index} />
-          <Link to={'/settings'}>
-            <FontAwesomeIcon icon={faSlidersH} size='lg' className='settings' />
-          </Link>
+          <div className="flex">
+            <Search searchIndex={data.siteSearchIndex.index} />
+            <Link to={'/settings'}>
+              <FontAwesomeIcon icon={faSlidersH} size='lg' className='settings' />
+            </Link>
+          </div>
         </header>
       )}
     />
