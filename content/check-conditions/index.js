@@ -1,16 +1,16 @@
 const method1 = (list1, list2) => list1.concat(list2); // new array
 
 const method2 = (list1, list2) => {
-    list1.push.apply(list1, list2); // returns length
-    return list1; // mutated!
+  list1.push.apply(list1, list2); // returns length
+  return list1; // mutated!
 };
 
 const method3 = (list1, list2) => {
-    list1.push(...list2);
-    return list1;
+  list1.push(...list2);
+  return list1;
 };
 
-const method4 = (list1, list2) => ([...list1, ...list2]);
+const method4 = (list1, list2) => [...list1, ...list2];
 
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];

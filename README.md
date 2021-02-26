@@ -1,7 +1,9 @@
 # GuideSmiths JS pills 💊
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -12,12 +14,14 @@ This repo contains all the JS pills prepared by our GS members.
 
 ## How do I create a pill? 📝
 
-To create a pill the only thing that you need to do is execute the `createPill.js` file from the main directory with node like this:
+To create a pill the only thing that you need to do is run one of the following commands:
 
 ```
 npm run create:pill
 ```
+
 or
+
 ```
 node ./js/createPill.js
 ```
@@ -25,12 +29,9 @@ node ./js/createPill.js
 Then the system will ask you three question
 
 1. the name of your pill
-2. the name of the folder to add in the pills directory
-3. the level of your pill
 
 Then the system will create a directory in the pills folder with your pill's README file created, which you will modify for your presentation.
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/33903092/99791067-5aacf200-2b25-11eb-8ba6-5049125ee85d.gif)
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

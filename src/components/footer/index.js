@@ -41,11 +41,7 @@ const footer = () => {
           {'Gatsby'}
         </a>
         {' & '}
-        <a
-          href='github.com'
-          rel='noopener noreferrer nofollow'
-          target='_blank'
-        >
+        <a href='github.com' rel='noopener noreferrer nofollow' target='_blank'>
           {'GitHub'}
         </a>
       </p>

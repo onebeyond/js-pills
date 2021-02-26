@@ -1,10 +1,10 @@
 const urlApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
-const pairs =  ['BTCUSDT', 'ETHUSDT', 'NEOUSDT', 'XRPUSDT', 'DAIUSDT'];
+const pairs = ['BTCUSDT', 'ETHUSDT', 'NEOUSDT', 'XRPUSDT', 'DAIUSDT'];
 
-pairs.forEach( async symbol => {
+pairs.forEach(async symbol => {
   const result = await fetch(`${url}${symbol}`);
   console.log(symbol, ':', result);
-})
+});
 
 console.log('Start Fetching Prices');
 
@@ -22,7 +22,8 @@ getPricesSyncWhile(pairs, urlApi);
 console.log('for of');
 
 const getPricesSyncOf = async (pairs, url) => {
-  for (const symbol of pairs) {S
+  for (const symbol of pairs) {
+    S;
     const result = await fetch(`${urlApi}${symbol}`);
     console.log(symbol, ':', result);
   }
@@ -30,10 +31,11 @@ const getPricesSyncOf = async (pairs, url) => {
 
 getPricesSyncOf(pairs, urlApi);
 
+const pairsPromises = pairs.map(
+  async symbol => await fetch(`${urlApi}${symbol}`)
+);
 
-const pairsPromises = pairs.map(async symbol => await fetch(`${urlApi}${symbol}`));
-
-const getPricesSyncOfAwait = async (promises) => {
+const getPricesSyncOfAwait = async promises => {
   for await (const result of promises) {
     console.log('result', result);
   }
