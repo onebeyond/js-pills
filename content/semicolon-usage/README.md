@@ -113,5 +113,9 @@ If you don't use semicolons, never start a line with `[`, `(`, `,`, `*`, `/`, `,
 ```
 
 ```javascript
- `hey bro`.indexOf( 'o' )
+// ✖︎︎ problem
+`hey bro`.indexOf( 'o' )
+
+// ✔ solution
+;`hey bro`.indexOf( 'o' )
 ```
