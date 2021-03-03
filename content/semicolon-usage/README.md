@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 slug: "/pill/semicolon-usage"
+=======
+slug: "/content/semicolon-usage"
+>>>>>>> merged
 date: "2021-02-25"
 author: "Jorge Baumann"
 title: "Semicolon usage"
@@ -22,7 +26,12 @@ function greet() {
 This is because JavaScript has a feature called **Automatic Semicolon Insertion** aka ASI.  
 ASI puts semicolons in your JavaScript for you. It’s a part of the language and can not be disabled, it's always active.
 
+<<<<<<< HEAD
 ASI has a set of rules to insert semicolons. If there is already a semicolon, it won’t change anything.
+=======
+ASI has a set of rules it uses to determine where it should insert semicolons. If there is already a semicolon in place,
+it won’t change anything.
+>>>>>>> merged
 
 Our previous code will be transformed into this one:
 
@@ -41,7 +50,11 @@ a = b + c
 ( d + e ).print()
 ```
 
+<<<<<<< HEAD
 is not transformed, because the expression that begins the second line can be interpreted as an argument
+=======
+is not transformed, because the parenthesized expression that begins the second line can be interpreted as an argument
+>>>>>>> merged
 list for a function call:
 
 ```javascript
@@ -82,7 +95,11 @@ function foo() {
 }
 ```
 
+<<<<<<< HEAD
 Because of ASI, the compiler places a semicolon after the return keyword and therefore it returns `undefined` without an error being thrown.
+=======
+Because of ASI, the compiler places a semicolon after the return keyword and therefore it returns undefined without an error being thrown.
+>>>>>>> merged
 
 <br>
 
@@ -90,6 +107,7 @@ Because of ASI, the compiler places a semicolon after the return keyword and the
 
 If you don't use semicolons, never start a line with `[`, `(`, `,`, `*`, `/`, `,`, `.`, `+`, `-`.
 
+<<<<<<< HEAD
 
 ```javascript
 // ✖︎︎ problem
@@ -118,4 +136,20 @@ If you don't use semicolons, never start a line with `[`, `(`, `,`, `*`, `/`, `,
 
 // ✔ solution
 ;`hey bro`.indexOf( 'o' )
+=======
+Bad examples:
+
+```javascript
+( function() {
+  console.log( 'hey, yo!' )
+}() )
+```
+
+```javascript
+[1, 2, 3].forEach( dude )
+```
+
+```javascript
+`hey bro`.indexOf( 'o' )
+>>>>>>> merged
 ```
