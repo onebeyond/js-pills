@@ -1,4 +1,17 @@
-const originalArray = ['🇪🇸', '🏁', '🇪🇺', '🇪🇸', '🇪🇸', '🇮🇨', '🇮🇨', '🏳️‍🌈', '🇮🇨', '🇮🇨', '🇮🇨', '🇪🇺'];
+const originalArray = [
+  '🇪🇸',
+  '🏁',
+  '🇪🇺',
+  '🇪🇸',
+  '🇪🇸',
+  '🇮🇨',
+  '🇮🇨',
+  '🏳️‍🌈',
+  '🇮🇨',
+  '🇮🇨',
+  '🇮🇨',
+  '🇪🇺',
+];
 
 const explainReduce = () => {
   const steps = [];
@@ -7,7 +20,9 @@ const explainReduce = () => {
     step.item = flag;
     step.accumulatorBeforeReducerFunction = acc;
     step.pushToAccumulator = !acc.includes(flag) ? 'YES' : 'NO';
-    step.accumulatorAfterReducerFunction = acc.includes(flag) ? acc : [...acc, flag];
+    step.accumulatorAfterReducerFunction = acc.includes(flag)
+      ? acc
+      : [...acc, flag];
     steps.push(step);
     console.log(step);
     return acc.includes(flag) ? acc : [...acc, flag];
@@ -26,7 +41,8 @@ const explainFilter = () => {
     step.index = index;
     step.indexOf = originalArray.indexOf(flag);
     step.condition = originalArray.indexOf(flag) === index;
-    step.operation = originalArray.indexOf(flag) === index ? 'MAINTAIN' : 'DISCARD';
+    step.operation =
+      originalArray.indexOf(flag) === index ? 'MAINTAIN' : 'DISCARD';
     steps.push(step);
     //console.log(step)
     return originalArray.indexOf(flag) === index;

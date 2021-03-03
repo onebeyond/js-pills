@@ -1,13 +1,28 @@
-const dirtyArray = [0, 1, 'one', 2, '', 3, true, undefined, '5', false, 8, NaN, 'thirteen', Symbol('symbol')];
-const falseyArray = [false, null, 0, '', undefined, NaN, -0 ];
-const areFalseyOrNotArray = [ '0', 'false', [], {}, () => {}, ];
+const dirtyArray = [
+  0,
+  1,
+  'one',
+  2,
+  '',
+  3,
+  true,
+  undefined,
+  '5',
+  false,
+  8,
+  NaN,
+  'thirteen',
+  Symbol('symbol'),
+];
+const falseyArray = [false, null, 0, '', undefined, NaN, -0];
+const areFalseyOrNotArray = ['0', 'false', [], {}, () => {}];
 
 const firstMethod = arr => arr.filter(elem => Boolean(elem));
 const sameFirstMethod = arr => arr.filter(Boolean);
 const secondMethod = arr => arr.filter(elem => !!elem);
 const thirdMethod = arr => arr.filter(elem => elem);
 
-const testTruthyOrFalsey = val => val ? 'truthy' : 'falsey';
+const testTruthyOrFalsey = val => (val ? 'truthy' : 'falsey');
 
 console.log(`Value 0 is ${tesTruthyOrFalsey(0)}`);
 console.log(`Value false is ${tesTruthyOrFalsey(false)}`);

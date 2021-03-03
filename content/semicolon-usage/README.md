@@ -1,5 +1,5 @@
 ---
-slug: "/content/semicolon-usage"
+slug: "/pill/semicolon-usage"
 date: "2021-02-25"
 author: "Jorge Baumann"
 title: "Semicolon usage"
