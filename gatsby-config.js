@@ -102,5 +102,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-dark-mode',
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-feed`,
   ],
 };
