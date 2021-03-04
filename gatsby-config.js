@@ -9,7 +9,7 @@ module.exports = {
     author: 'GuideSmiths',
   },
   flags: {
-    THE_FLAG: false
+    DEV_SSR: false,
   },
   plugins: [
     {
