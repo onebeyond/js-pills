@@ -8,6 +8,7 @@
     "test": "jest",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
+    "serve": "gatsby serve",
     "format": "prettier --config .prettierrc --write './**/*.{js,jsx}'",
     "cy:open": "$(npm bin)/cypress open",
     "cy:run": "cypress run",
