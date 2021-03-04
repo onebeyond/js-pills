@@ -11,11 +11,17 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+const kebabCase = string =>
+  string
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .map(x => x.toLowerCase())
+    .join('-');
+
 const question1 = () => {
   return new Promise(resolve => {
     rl.question("What's your pill name? ", answer => {
       console.log(`Pill's name: ${answer}`);
-      newPill.name = answer;
+      newPill.name = kebabCase(answer);
       resolve();
     });
   });
@@ -35,10 +41,7 @@ const formatDate = () => {
 
 const main = async () => {
   await question1();
-  const dir = `./pill/${newPill.name
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map(x => x.toLowerCase())
-    .join('-')}`;
+  const dir = `./content/${newPill.name}`;
 
   if (fs.existsSync(dir)) {
     console.log(`The ${dir} already exist`);
@@ -49,7 +52,7 @@ const main = async () => {
   fs.writeFileSync(
     `${dir}/README.md`,
     `---
-slug: "${dir}"
+slug: "./pill/${newPill.name}"
 date: "${formatDate()}"
 author: "YOUR NAME HERE"
 title: "ADD YOUR PILL'S TITLE HERE"
