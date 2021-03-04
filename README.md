@@ -23,12 +23,10 @@ npm run create:pill
 or
 
 ```
-node ./js/createPill.js
+node ./scripts/createPill.js
 ```
 
-Then the system will ask you three question
-
-1. the name of your pill
+Then the system will ask you to insert your pill's name
 
 Then the system will create a directory in the pills folder with your pill's README file created, which you will modify for your presentation.
 

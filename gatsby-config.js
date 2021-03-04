@@ -144,7 +144,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "JS pills RSS Feed",
+            title: 'JS pills RSS Feed',
           },
         ],
       },
