@@ -8,6 +8,9 @@ module.exports = {
     siteUrl: settings.websiteUrl,
     author: 'GuideSmiths',
   },
+  flags: {
+    THE_FLAG: false
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
