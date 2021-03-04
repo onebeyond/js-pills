@@ -15,6 +15,11 @@
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guidesmiths/js-pills.git"
@@ -58,17 +63,13 @@
     "typography-theme-sutro": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run format"
-    }
-  },
   "devDependencies": {
     "cypress": "^6.5.0",
     "eslint": "^7.17.0",
     "gh-pages": "^3.1.0",
     "husky": "^4.3.0",
     "jest": "^26.6.3",
+    "pretty-quick": "^3.1.0",
     "start-server-and-test": "^1.12.0"
   }
 }
