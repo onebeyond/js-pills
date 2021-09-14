@@ -15,7 +15,9 @@
   justify-content: space-between;
 
   .logo {
-    width: 100%;
+    width: 13.3333333333rem;
+    height: 5.3333333333rem;
+    max-width: 100%;
   }
 
   .flex {
@@ -23,5 +25,9 @@
     justify-content: space-between;
     align-items: center;
     width: 250px;
+  }
+
+  .st0 {
+    fill: var(--textNormal);
   }
 }
