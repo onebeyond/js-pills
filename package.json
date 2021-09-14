@@ -38,7 +38,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.4.2",
-    "gatsby": "^2.32.3",
+    "gatsby": "^2.32.5",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-fontawesome-css": "^1.0.0",
