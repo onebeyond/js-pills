@@ -17,6 +17,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "pretty-quick --staged"
     }
   },
@@ -64,6 +65,8 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "cypress": "^6.5.0",
     "eslint": "^7.17.0",
     "gh-pages": "^3.1.0",
