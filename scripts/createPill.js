@@ -52,7 +52,7 @@ const main = async () => {
   fs.writeFileSync(
     `${dir}/README.md`,
     `---
-slug: "./pill/${newPill.name}"
+slug: "/pill/${newPill.name}"
 date: "${formatDate()}"
 author: "YOUR NAME HERE"
 title: "ADD YOUR PILL'S TITLE HERE"

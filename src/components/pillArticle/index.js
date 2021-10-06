@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const pillArticle = ({ node, title, description }) => {
   return (
     <article className='article preview-card'>
-      <span>💊</span>
+      <span id='pill'>💊</span>
       <div className='pill-article-content'>
         <h3>
           <Link
