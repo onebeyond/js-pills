@@ -1,7 +1,7 @@
 # GuideSmiths JS pills 💊
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo contains all the JS pills prepared by our GS members.
@@ -61,6 +61,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/bounteous"><img src="https://avatars.githubusercontent.com/u/16175933?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bounteous</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=bounteous" title="Code">💻</a> <a href="#content-bounteous" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/davidubuntu"><img src="https://avatars.githubusercontent.com/u/11554573?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ddiezr</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=davidubuntu" title="Code">💻</a> <a href="#content-davidubuntu" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/neodmy"><img src="https://avatars.githubusercontent.com/u/36865163?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Miguel Yusta</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=neodmy" title="Code">💻</a> <a href="#content-neodmy" title="Content">🖋</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/irenemateoh-frontend/"><img src="https://avatars.githubusercontent.com/u/39806058?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Irene Mateo Herrero</b></sub></a><br /><a href="https://github.com/guidesmiths/js-pills/commits?author=irenemherrero" title="Code">💻</a></td>
   </tr>
 </table>
 
