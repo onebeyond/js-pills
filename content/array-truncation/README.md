@@ -34,7 +34,7 @@ You can truncate the array, making it smaller by changing the array.length. See 
 
 ```js
 var numbers = [1, 2, 3, 4, 5];
-numbers.length = 3; // now stooges is [1, 2, 3]
+numbers.length = 3; // now numbers is [1, 2, 3]
 ```
 
 Note: if you assign a length which is longer than current length, undefined array elements are introduced, as shown below.
