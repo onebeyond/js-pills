@@ -16,7 +16,7 @@ Just remember splice modifies, slice accesses. Negative numbers as first arg ind
 
 ```js
 var firstArray = [2, 4, 6, 8];
-var secondArray = firstArray.splice(-2, 2); // a1=[2,4], a2=[6,8]
+var secondArray = firstArray.splice(-2, 2); // firstArray=[2,4], secondArray=[6,8]
 ```
 
 2. `.slice()`
@@ -25,7 +25,7 @@ If you're asking how to retrieve a subset of an array without modifying the orig
 
 ```js
 var firstArray = [2, 4, 6, 8];
-var secondArray = firstArray.slice(-2); // a1=[2,4,6,8], a2=[6,8]
+var secondArray = firstArray.slice(-2); // firstArray=[2,4,6,8], secondArray=[6,8]
 ```
 
 3. `Array.length`
