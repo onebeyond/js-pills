@@ -2,8 +2,8 @@
 slug: "/pill/regular-expressions"
 date: "2022-01-18"
 author: "Hamsa Aldrobi"
-title: "RegEx: Regular Expressions"
-description: "A regular expression is a sequence of characters that specifies a search pattern."
+title: "RegEx: basic functions and groups property"
+description: "A regular expression is a sequence of characters that specifies a search or a pattern. Some of the functions are exec() and test(), in this js-pill we will see the basic functions and the groups property adventages."
 ---
 # ReGex [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
