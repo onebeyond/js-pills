@@ -26,13 +26,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
@@ -89,7 +82,7 @@ module.exports = {
         background_color: '#385',
         theme_color: '#385',
         display: 'minimal-ui',
-        icon: 'assets/logo.webp',
+        icon: 'assets/one-beyond-logo.gif',
         crossOrigin: `use-credentials`,
       },
     },
