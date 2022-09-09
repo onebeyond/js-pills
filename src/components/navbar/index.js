@@ -2,11 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
-
 import { StaticQuery, graphql } from 'gatsby';
-import Search from '../search';
 
-import Logo from '../../../assets/svg/GS_logo.svg';
+import Search from '../search';
 
 const navbar = () => {
   return (
@@ -20,9 +18,7 @@ const navbar = () => {
       `}
       render={data => (
         <header className='navbar'>
-          <Link to={'/'}>
-            <Logo className='logo' />
-          </Link>
+          <Link to={'/'}>One Beyond</Link>
           <div className='flex'>
             <Search searchIndex={data.siteSearchIndex.index} />
             <Link to={'/settings'}>

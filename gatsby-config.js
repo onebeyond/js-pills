@@ -6,7 +6,7 @@ module.exports = {
     title: settings.websiteName,
     description: settings.websiteDescription,
     siteUrl: settings.websiteUrl,
-    author: 'GuideSmiths',
+    author: 'One Beyond',
   },
   flags: {
     DEV_SSR: true,
@@ -23,6 +23,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content`,
         name: `pills`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -79,10 +86,10 @@ module.exports = {
         name: 'JS-Pills',
         short_name: 'JS-Pills',
         start_url: '/',
-        background_color: '#6b37bf',
-        theme_color: '#6b37bf',
+        background_color: '#385',
+        theme_color: '#385',
         display: 'minimal-ui',
-        icon: 'assets/guidesmiths-logo.png',
+        icon: 'assets/logo.webp',
         crossOrigin: `use-credentials`,
       },
     },
@@ -157,5 +164,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-sitemap`,
+    '@skagami/gatsby-plugin-dark-mode',
   ],
 };

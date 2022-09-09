@@ -1,30 +1,31 @@
 import React from 'react';
-import Layout from '../../layouts/mainLayout';
+import { useTheme } from '@skagami/gatsby-plugin-dark-mode';
 
+import Layout from '../../layouts/mainLayout';
 import Card from '../../layouts/cardLayout';
 
 const settings = () => {
+  const [theme, toggleTheme] = useTheme();
+
+  if (theme === null) {
+    return null;
+  }
+
   return (
     <Layout>
-      {/* <Card className='settings-card'>
+      <Card className='settings-card'>
         <div className='dark-mode'>
-          <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-              <label className='switch'>
-                <input
-                  type='checkbox'
-                  onChange={e =>
-                    toggleTheme(e.target.checked ? 'dark' : 'light')
-                  }
-                  checked={theme === 'dark'}
-                />
-                <span className='slider round'></span>
-              </label>
-            )}
-          </ThemeToggler>
+          <label className='switch'>
+            <input
+              type='checkbox'
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />
+            <span className='slider round'></span>
+          </label>
           {'Dark mode'}
         </div>
-      </Card> */}
+      </Card>
     </Layout>
   );
 };

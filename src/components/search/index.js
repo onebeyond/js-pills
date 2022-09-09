@@ -13,8 +13,10 @@ const Search = ({ searchIndex }) => {
 
   const search = evt => {
     const query = evt.target.value;
+
     setIndex(getOrCreateIndex());
     setQuery(query);
+
     if (index) {
       setResults(
         index
