@@ -6,8 +6,6 @@ import Card from '../layouts/cardLayout';
 import SEO from '../components/seo';
 import PillArticle from '../components/pillArticle';
 
-const renderPills = pills => {};
-
 const Home = ({ data }) => {
   const pills = data.allMarkdownRemark.edges;
 
