@@ -10,7 +10,7 @@ This repo contains all the JS pills prepared by our GS members.
 
 ## Live demo
 
-[guidesmiths.github.io/js-pills/](https://guidesmiths.github.io/js-pills/)
+[onebeyond.github.io/js-pills](https://onebeyond.github.io/js-pills/)
 
 ## How do I create a pill? 📝
 
