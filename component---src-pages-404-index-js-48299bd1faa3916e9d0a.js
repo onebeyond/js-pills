@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjs_pills=self.webpackChunkjs_pills||[]).push([[911],{1105:function(e,l,n){n.r(l);var t=n(7294),u=n(6457),i=n(2797);l.default=function(){return t.createElement(u.Z,null,t.createElement(i.Z,{title:"Pill not found"}),t.createElement("div",null,"Pill not found"))}}}]);
+//# sourceMappingURL=component---src-pages-404-index-js-48299bd1faa3916e9d0a.js.map

@@ -1,0 +1,747 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:24px;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:var(--textNormal);text-decoration:none;}a:hover,a:active{text-decoration:underline;}a.anchor{box-shadow:none;}a.anchor svg[aria-hidden="true"]{stroke:var(--textLink);}a:hover{color:var(--textLink);text-decoration:none;}</style><meta name="generator" content="Gatsby 4.22.1"/><meta name="theme-color" content="#385"/><style data-href="/js-pills/styles.c36cd826ac6018a5b1ce.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}:root{--bg:#f6f6f6;--textNormal:#222;--greyText:#505050;--textTitle:#222;--textLink:#4545ca;--hr:rgba(0,0,0,.2);--card-back-color:#fff;--card-fore-color:#000;--card-shadow-color:#efefef;--nav-bar-back-color:#fff;--primary:#385}body.dark{-webkit-font-smoothing:antialiased;--bg:#121212;--textNormal:hsla(0,0%,100%,.88);--greyText:#858585;--textTitle:#fff;--textLink:#40ad77;--hr:hsla(0,0%,100%,.2);--code-color:#fff;--card-shadow-color:#efefef;--nav-bar-back-color:#1e1e1e;--card-back-color:#252525;--card-shadow-color:#3a3a3a;--card-fore-color:#fff}.navbar{align-items:center;background:var(--nav-bar-back-color);border-bottom:1px solid var(--card-shadow-color);box-sizing:border-box;display:flex;height:120px;justify-content:center;justify-content:space-between;line-height:0;padding-left:calc(50% - 441px);padding-right:calc(50% - 433px);position:-webkit-sticky;position:sticky;top:0;z-index:1001}.navbar .logo{height:5.3333333333rem;max-width:100%;width:13.3333333333rem}.navbar .flex{align-items:center;display:flex;justify-content:space-between;width:250px}.navbar .st0{fill:var(--textNormal)}footer{margin:3.5rem .5rem 0;min-height:9rem;padding-left:calc(50% - 441px);padding-right:calc(50% - 433px)}footer .footer-link+.footer-link{margin-left:1rem}footer>p{color:var(--textNormal);font-size:".875rem";line-height:"2rem"}footer>p>a{color:var(--greyText);margin:0}#pill{font-size:2em}.pill-article-content{width:80%}.content{padding-left:calc(50% - 441px);padding-right:calc(50% - 433px)}.preview-card{align-items:center;display:flex;height:176px;justify-content:space-around;min-width:588px;padding:27px}.pill-post{justify-content:center;padding:30px;width:100%}.pill-post,.search{flex-direction:column}.search{display:flex;display:inline-block;position:relative}.search .search-bar{border-radius:.3rem;height:46px;padding:0 .6rem;width:200px}.search .search-results{background-color:var(--bg)}.search .dropdown-content{background-color:#f6f6f6;border:1px solid #ddd;border-radius:.3rem;margin:0;overflow:auto;position:absolute;width:200px;z-index:1}.search .dropdown-content a{color:#000;display:block;padding:12px 16px;text-decoration:none}.search .dropdown a:hover{background-color:#ddd}.pill-post-container{display:flex;justify-content:center}.pill-post-container .date-and-author{line-height:3rem}.settings-card{padding:3%}.settings-card>.dark-mode{align-items:center;display:flex;flex-direction:row-reverse;justify-content:space-between}.settings-card .switch{display:inline-block;height:34px;position:relative;width:60px}.settings-card .switch input{height:0;opacity:0;width:0}.settings-card .slider{background-color:#ccc;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0;transition:.4s}.settings-card .slider:before{background-color:#fff;bottom:4px;content:"";height:26px;left:4px;position:absolute;transition:.4s;width:26px}.settings-card input:checked+.slider{background-color:var(--primary)}.settings-card input:focus+.slider{box-shadow:0 0 1px #2196f3}.settings-card input:checked+.slider:before{-webkit-transform:translateX(26px);transform:translateX(26px)}.settings-card .slider.round{border-radius:34px}.settings-card .slider.round:before{border-radius:50%}.page-container{background-color:var(--bg);min-height:100vh;width:100vw}.card,.page-container{transition:all .3s ease}.card{background:var(--card-back-color);border-radius:.5rem;box-shadow:0 3px 5px 1px var(--card-shadow-color);color:var(--card-fore-color);margin-top:1.5rem;overflow:hidden;position:relative}</style><link rel="icon" href="/js-pills/favicon-32x32.png?v=c23fed4a8802de5d2797a712be98a7d2" type="image/png"/><link rel="manifest" href="/js-pills/manifest.webmanifest" crossorigin="use-credentials"/><link rel="apple-touch-icon" sizes="48x48" href="/js-pills/icons/icon-48x48.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="apple-touch-icon" sizes="72x72" href="/js-pills/icons/icon-72x72.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="apple-touch-icon" sizes="96x96" href="/js-pills/icons/icon-96x96.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="apple-touch-icon" sizes="144x144" href="/js-pills/icons/icon-144x144.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="apple-touch-icon" sizes="192x192" href="/js-pills/icons/icon-192x192.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="apple-touch-icon" sizes="256x256" href="/js-pills/icons/icon-256x256.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="apple-touch-icon" sizes="384x384" href="/js-pills/icons/icon-384x384.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="apple-touch-icon" sizes="512x512" href="/js-pills/icons/icon-512x512.png?v=c23fed4a8802de5d2797a712be98a7d2"/><link rel="alternate" type="application/rss+xml" title="JS pills RSS Feed" href="/js-pills/rss.xml"/><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="sitemap" type="application/xml" href="/js-pills/sitemap/sitemap-index.xml"/></head><body><script>
+void function() {
+  window.__onThemeChange = function() {}
+
+  var preferredTheme
+  try {
+    preferredTheme = localStorage.getItem('theme')
+  } catch (err) { }
+
+  function setTheme(newTheme) {
+    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+      document.body.classList.replace(preferredTheme, newTheme)
+    } else {
+      document.body.classList.add(newTheme)
+    }
+
+    window.__theme = newTheme
+    preferredTheme = newTheme
+    window.__onThemeChange(newTheme)
+  }
+
+  window.__setPreferredTheme = function(newTheme) {
+    setTheme(newTheme)
+    try {
+      localStorage.setItem('theme', newTheme)
+    } catch (err) {}
+  }
+
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  darkQuery.addListener(function(e) {
+    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+  })
+
+  setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+}()
+    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-container"><header class="navbar"><a href="/js-pills/">One Beyond</a><div class="flex"><div class="search"><input type="text" class="search-bar" placeholder="Search..." value=""/><ul class="dropdown-content" style="display:none"></ul></div><a href="/js-pills/settings"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sliders-h" class="svg-inline--fa fa-sliders-h fa-w-16 fa-lg settings" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M496 384H160v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h80v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h336c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160h-80v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h336v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h80c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160H288V48c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16C7.2 64 0 71.2 0 80v32c0 8.8 7.2 16 16 16h208v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h208c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16z"></path></svg></a></div></header><div class="content"><div class="pill-post-container"><div class="card pill-post"><div class="pill-post-content"><h1>Dedupe arrays ['🇪🇸', '🏁', '🇪🇺', '🇪🇸', '🇪🇸', '🇮🇨', '🇮🇨', '🏳️‍🌈', '🇮🇨', '🇮🇨', '🇮🇨', '🇪🇺']</h1>
+<p>We're presenting 3 ways to dedupe an array in Javascript.</p>
+<p>Credits to Samantha Ming: <a href="https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/">https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/</a></p>
+<h2>Original array</h2>
+<p>Let's have a look at this array:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> originalArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'🇪🇸'</span><span class="token punctuation">,</span> <span class="token string">'🏁'</span><span class="token punctuation">,</span> <span class="token string">'🇪🇺'</span><span class="token punctuation">,</span> <span class="token string">'🇪🇸'</span><span class="token punctuation">,</span> <span class="token string">'🇪🇸'</span><span class="token punctuation">,</span> <span class="token string">'🇮🇨'</span><span class="token punctuation">,</span> <span class="token string">'🇮🇨'</span><span class="token punctuation">,</span> <span class="token string">'🏳️‍🌈'</span><span class="token punctuation">,</span> <span class="token string">'🇮🇨'</span><span class="token punctuation">,</span> <span class="token string">'🇮🇨'</span><span class="token punctuation">,</span> <span class="token string">'🇮🇨'</span><span class="token punctuation">,</span> <span class="token string">'🇪🇺'</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre></div>
+<p>As you can observe, this array contains a lot of flags. Several appear more than once. Some of them too many times. ;)</p>
+<p>How can we remove all the duplicates from that array and get a new one with every flag but only once in it?</p>
+<h3>Mutation</h3>
+<p>Let's have in mind that the methods we're showing here does not mutate the original array.</p>
+<h2>1. Reduce</h2>
+<p>We can use reduce to dedupe the array:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">reduceMethod</span> <span class="token operator">=</span> <span class="token parameter">array</span> <span class="token operator">=></span> array<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> flag</span><span class="token punctuation">)</span> <span class="token operator">=></span> acc<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">?</span> acc <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>acc<span class="token punctuation">,</span> flag<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>With this method, we start with an empty array.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// look at the ---> [] &lt;--- at the end</span>
+</code></pre></div>
+<p>Then, the reduce is going to apply a function to every element in the array. That function is</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">acc<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">?</span> acc <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>acc<span class="token punctuation">,</span> flag<span class="token punctuation">]</span></code></pre></div>
+<p>So, for every flag in the array, this function is goin to check if that flag is already in the accumulated array (we started from an empty array, remember). If the flag is already in that array, it just return the accumulated array. If the flag is not in the array, then we append the flag to the accumulated array and return it, which will become the new accumulated array.</p>
+<p>Here you have a code that will show the steps:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> steps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> explainedReducer <span class="token operator">=</span> originalArray<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> flag</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> step <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  step<span class="token punctuation">.</span>item <span class="token operator">=</span> flag<span class="token punctuation">;</span>
+  step<span class="token punctuation">.</span>accumulatorBeforeReducerFunction <span class="token operator">=</span> acc<span class="token punctuation">;</span>
+  step<span class="token punctuation">.</span>pushToAccumulator <span class="token operator">=</span> <span class="token operator">!</span>acc<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">'YES'</span> <span class="token operator">:</span> <span class="token string">'NO'</span><span class="token punctuation">;</span>
+  step<span class="token punctuation">.</span>accumulatorAfterReducerFunction <span class="token operator">=</span> acc<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">?</span> acc <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>acc<span class="token punctuation">,</span> flag<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  steps<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// console.log(step);</span>
+  <span class="token keyword">return</span> acc<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">?</span> acc <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>acc<span class="token punctuation">,</span> flag<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>explainedReducer<span class="token punctuation">)</span>
+<span class="token comment">// [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]</span>
+console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>steps<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">┌─────────┬────────┬────────────────────────────────────────────┬───────────────────┬────────────────────────────────────────────┐
+│ (index) │  item  │      accumulatorBeforeReducerFunction      │ pushToAccumulator │      accumulatorAfterReducerFunction       │
+├─────────┼────────┼────────────────────────────────────────────┼───────────────────┼────────────────────────────────────────────┤
+│    0    │ '🇪🇸'   │                     []                     │       'YES'       │                 [ '🇪🇸' ]                 │
+│    1    │ '🏁'   │                 [ '🇪🇸' ]                    │       'YES'       │              [ '🇪🇸', '🏁' ]              │
+│    2    │ '🇪🇺'   │              [ '🇪🇸', '🏁' ]                 │       'YES'       │          [ '🇪🇸', '🏁', '🇪🇺' ]          │
+│    3    │ '🇪🇸'   │          [ '🇪🇸', '🏁', '🇪🇺' ]               │       'NO'        │          [ '🇪🇸', '🏁', '🇪🇺' ]          │
+│    4    │ '🇪🇸'   │          [ '🇪🇸', '🏁', '🇪🇺' ]               │       'NO'        │          [ '🇪🇸', '🏁', '🇪🇺' ]          │
+│    5    │ '🇮🇨'   │          [ '🇪🇸', '🏁', '🇪🇺' ]               │       'YES'       │       [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨' ],  │
+│    6    │ '🇮🇨'   │       [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨' ],           │       'NO'        │       [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨' ],  │
+│    7    │ '🏳️‍🌈'   │       [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨' ],         │       'YES'       │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ] │
+│    8    │ '🇮🇨'   │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]      │       'NO'        │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ] │
+│    9    │ '🇮🇨'   │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]      │       'NO'        │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ] │
+│   10    │ '🇮🇨'   │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]      │       'NO'        │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ] │
+│   11    │ '🇪🇺'   │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]      │       'NO'        │     [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ] │
+└─────────┴────────┴────────────────────────────────────────────┴───────────────────┴────────────────────────────────────────────┘</code></pre></div>
+<p>You can run that explained code from the source in this repository running:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">node</span> ./explained.js</code></pre></div>
+<p>This way, only when a flag is not in the to-be-the-solution-array, it is appended to it.</p>
+<h2>2. Filter</h2>
+<p>The second method we're going to present is filter.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">filterMethod</span> <span class="token operator">=</span> <span class="token parameter">array</span> <span class="token operator">=></span> array<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">flag<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=></span> array<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">===</span> index<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>This method uses <code class="language-text">filter</code> over the array that is passed. For each element in the array, it executes a function with two params, the element (<code class="language-text">flag</code>) and the index of that element in the array.</p>
+<p>Then, for each element, it gets the index of the first ocurrence of the flag in the array and compares it with the current index.</p>
+<p>So, this way, when the current index is not the same than the one for the first occurrence of the flag, that occurrence is discarded and not added in the solution array. Only when the current index is the same than the index of the first occurrence of a flag, that flag will be part of the solution.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">explainFilter</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> steps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> explainedFilter <span class="token operator">=</span> originalArray<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">flag<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> step <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    step<span class="token punctuation">.</span>item <span class="token operator">=</span> flag<span class="token punctuation">;</span>
+    step<span class="token punctuation">.</span>index <span class="token operator">=</span> index<span class="token punctuation">;</span>
+    step<span class="token punctuation">.</span>indexOf <span class="token operator">=</span> originalArray<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    step<span class="token punctuation">.</span>condition <span class="token operator">=</span> originalArray<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">===</span> index<span class="token punctuation">;</span>
+    step<span class="token punctuation">.</span>operation <span class="token operator">=</span> originalArray<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">===</span> index <span class="token operator">?</span> <span class="token string">'MAINTAIN'</span> <span class="token operator">:</span> <span class="token string">'DISCARD'</span><span class="token punctuation">;</span>
+    steps<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//console.log(step)</span>
+    <span class="token keyword">return</span> originalArray<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">===</span> index<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>explainedFilter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>steps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">explainFilter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">┌─────────┬────────┬───────┬─────────┬───────────┬────────────┐
+│ (index) │  item  │ index │ indexOf │ condition │ operation  │
+├─────────┼────────┼───────┼─────────┼───────────┼────────────┤
+│    0    │ '🇪🇸' │   0   │    0    │   true    │ 'MAINTAIN' │
+│    1    │  '🏁'  │   1   │    1    │   true    │ 'MAINTAIN' │
+│    2    │ '🇪🇺' │   2   │    2    │   true    │ 'MAINTAIN' │
+│    3    │ '🇪🇸' │   3   │    0    │   false   │ 'DISCARD'  │
+│    4    │ '🇪🇸' │   4   │    0    │   false   │ 'DISCARD'  │
+│    5    │ '🇮🇨' │   5   │    5    │   true    │ 'MAINTAIN' │
+│    6    │ '🇮🇨' │   6   │    5    │   false   │ 'DISCARD'  │
+│    7    │ '🏳️‍🌈'  │   7   │    7    │   true    │ 'MAINTAIN' │
+│    8    │ '🇮🇨' │   8   │    5    │   false   │ 'DISCARD'  │
+│    9    │ '🇮🇨' │   9   │    5    │   false   │ 'DISCARD'  │
+│   10    │ '🇮🇨' │  10   │    5    │   false   │ 'DISCARD'  │
+│   11    │ '🇪🇺' │  11   │    2    │   false   │ 'DISCARD'  │
+└─────────┴────────┴───────┴─────────┴───────────┴────────────┘</code></pre></div>
+<p>You can run that explained code from the source in this repository running:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">node</span> ./explained.js</code></pre></div>
+<h2>3. Set</h2>
+<p>The third method to be shown uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>.</p>
+<p>This method creates a new Set with the elements of the array. A Set stores only unique values, so it will dedupe the incoming ones.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> uniqueSet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>originalArray<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Set { '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' }</span></code></pre></div>
+<p>Now that we have a Set of unique values, to transform it into an array, we can use the spread operator.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> set2Array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>uniqueSet<span class="token punctuation">]</span>
+<span class="token comment">// [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]</span></code></pre></div>
+<p>And 🎉🎉🎉, our deduped array:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">setMethod</span> <span class="token operator">=</span> <span class="token parameter">array</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">setMethod</span><span class="token punctuation">(</span>originalArray<span class="token punctuation">)</span>
+<span class="token comment">// [ '🇪🇸', '🏁', '🇪🇺', '🇮🇨', '🏳️‍🌈' ]</span></code></pre></div>
+<h2>Benchmark</h2>
+<p>After reading <a href="https://blog.usejournal.com/performance-of-javascript-array-ops-2690aed47a50">Miguel Albrecht</a> created a benchmark against the code by Samantha, I decided to create mine.</p>
+<p>It's a very silly and simple benchmark, but it gives you the possibility of playing with the values and will give you the idea of what of the 3 ways is better to use.</p>
+<p>In the benchmark, there are 3 configurable variables:</p>
+<ul>
+<li><em>ITERATIONS</em>: the number of times the methods are going to be run</li>
+<li><em>ARRAY_LENGTH</em>: the size of the array that is going to be deduped</li>
+<li><em>RANDOM_RANGE</em>: the range of numbers that are going to be randomly picked to fill the array. i.e. 5000 means we're going to pick a random number between 0-5000 for every position of the array to be filled. The higher, the more chances to have less duplicate values.</li>
+</ul>
+<p>Some results of this benchmark (run in my MacBook Pro laptop)*:</p>
+<ul>
+<li>(index): the method run</li>
+<li>Values: the mean of all iterations run (in ms)</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const ITERATIONS = 10;
+const ARRAY_LENGTH = 100000;
+const RANDOM_RANGE = 5000;
+┌─────────────────────────────────────────────────────────────────────────────────────┬────────┐
+│                                       (index)                                       │ Values │
+├─────────────────────────────────────────────────────────────────────────────────────┼────────┤
+│ array => array.reduce((acc, flag) => acc.includes(flag) ? acc : [...acc, flag], []) │ 267.2  │
+│        array => array.filter((flag, index) => array.indexOf(flag) === index)        │ 475.9  │
+│                            array => [...new Set(array)]                             │   3    │
+└─────────────────────────────────────────────────────────────────────────────────────┴────────┘
+Benchmark total run time: 7511 ms</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const ITERATIONS = 10;
+const ARRAY_LENGTH = 500000;
+const RANDOM_RANGE = 9000;
+┌─────────────────────────────────────────────────────────────────────────────────────┬────────┐
+│                                       (index)                                       │ Values │
+├─────────────────────────────────────────────────────────────────────────────────────┼────────┤
+│ array => array.reduce((acc, flag) => acc.includes(flag) ? acc : [...acc, flag], []) │  1945  │
+│        array => array.filter((flag, index) => array.indexOf(flag) === index)        │ 3479.7 │
+│                            array => [...new Set(array)]                             │  14.4  │
+└─────────────────────────────────────────────────────────────────────────────────────┴────────┘
+Benchmark total run time: 54817 ms</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const ITERATIONS = 10;
+const ARRAY_LENGTH = 1000000;
+const RANDOM_RANGE = 100000;
+┌─────────────────────────────────────────────────────────────────────────────────────┬─────────┐
+│                                       (index)                                       │ Values  │
+├─────────────────────────────────────────────────────────────────────────────────────┼─────────┤
+│ array => array.reduce((acc, flag) => acc.includes(flag) ? acc : [...acc, flag], []) │ 44740.6 │
+│        array => array.filter((flag, index) => array.indexOf(flag) === index)        │ 63489.5 │
+│                            array => [...new Set(array)]                             │  36.6   │
+└─────────────────────────────────────────────────────────────────────────────────────┴─────────┘
+Benchmark total run time: 1083454 ms</code></pre></div>
+<p>You can run the benchmark yourself using yout terminal:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">node</span> ./benchmark.js</code></pre></div>
+<p>* Don't rely on these values as it is not a very reliable benchmark nor its results are too. But it shows a pattern...</p>
+<h2>So, what do I use</h2>
+<p>From the simpleness and according to my own (very simple) benchmark, I would use the Set method anytime I can.</p>
+<h2>Browser compatibility 🔌</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>⚠️</th>
+<th>✅</th>
+<th>✅</th>
+<th>✅</th>
+<th>✅</th>
+<th>✅</th>
+<th>✅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💻</td>
+<td>IE</td>
+<td>Edge</td>
+<td>Firefox</td>
+<td>Chrome</td>
+<td>Safari</td>
+<td>Opera</td>
+<td>Node.js</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">reduce</a></td>
+<td>9</td>
+<td>12</td>
+<td>3</td>
+<td>3</td>
+<td>5</td>
+<td>10.5</td>
+<td>0.1.100</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter</a></td>
+<td>9</td>
+<td>12</td>
+<td>1.5</td>
+<td>1</td>
+<td>3</td>
+<td>9.5</td>
+<td>0.1.100</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes">includes</a></td>
+<td>-</td>
+<td>14</td>
+<td>43</td>
+<td>47</td>
+<td>9</td>
+<td>34</td>
+<td>6.0.0</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">indexOf</a></td>
+<td>9</td>
+<td>12</td>
+<td>1.5</td>
+<td>1</td>
+<td>3</td>
+<td>9.5</td>
+<td>0.1.100</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">set</a></td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>38</td>
+<td>8</td>
+<td>25</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">...</a></td>
+<td>-</td>
+<td>12</td>
+<td>16</td>
+<td>46</td>
+<td>8</td>
+<td>37</td>
+<td>5.0.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://gist.github.com/telekosmos/3b62a31a5c43f40849bb">@telekosmos ' Github Gist uniq.js</a></li>
+<li><a href="https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates/">Samantha Ming Tidbits: How to Remove Array Duplicates in ES6</a></li>
+<li><a href="https://medium.com/dailyjs/how-to-remove-array-duplicates-in-es6-5daa8789641c">DailyJS - by Samantha Ming: How to Remove Array Duplicates in ES6</a></li>
+<li><a href="https://www.instagram.com/p/BsjA-eiBAeT/">Samantha Ming Instagram</a></li>
+<li><a href="https://blog.usejournal.com/performance-of-javascript-array-ops-2690aed47a50">Performance of Javascript Array Ops by Miguel Albrecht</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">MSDN Web Docs: reduce</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">MSDN Web Docs: filter</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes">MSDN Web Docs: includes</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">MSDN Web Docs: indexOf</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">MSDN Web Docs: set</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">MSDN Web Docs: spread operator syntax</a></li>
+</ul></div><i class="date-and-author">July 03, 2020<!-- --> - <!-- -->author unknown</i></div></div></div><footer><p><a class="footer-link" href="https://github.com/onebeyond/js-pills" rel="noopener noreferrer nofollow" target="_blank">Github</a><a class="footer-link" href="https://twitter.com/guidesmiths" rel="noopener noreferrer nofollow" target="_blank">Twitter</a><a class="footer-link" href="https://www.linkedin.com/company/onebeyond/" rel="noopener noreferrer nofollow" target="_blank">Linkedin</a></p><p>Powered by <a href="gatsbyjs.com" rel="noopener noreferrer nofollow" target="_blank">Gatsby</a> &amp; <a href="github.com" rel="noopener noreferrer nofollow" target="_blank">GitHub</a></p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/pill/dedupe-arrays";window.___webpackCompilationHash="485d17cebed1841a52d1";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-4f08d7824a429f6e3471.js"],"app":["/app-a0f45c85471bdc909270.js"],"component---src-pages-404-index-js":["/component---src-pages-404-index-js-48299bd1faa3916e9d0a.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1671bc243062fd31bf22.js"],"component---src-pages-settings-index-js":["/component---src-pages-settings-index-js-d8f66dbc42b4c55f38ed.js"],"component---src-templates-pill-template-index-js":["/component---src-templates-pill-template-index-js-97f1d2739d2f92f9360b.js"]};/*]]>*/</script><script src="/js-pills/polyfill-4f08d7824a429f6e3471.js" nomodule=""></script><script src="/js-pills/app-a0f45c85471bdc909270.js" async=""></script><script src="/js-pills/framework-8a4c8a0ef3fd7bece6bf.js" async=""></script><script src="/js-pills/webpack-runtime-d3a87944c76b8cdcd000.js" async=""></script></body></html>
