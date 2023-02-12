@@ -41,7 +41,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
     "@skagami/gatsby-plugin-dark-mode": "^2.0.0",
-    "gatsby": "^4.0.0",
+    "gatsby": "^4.25.4",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^4.22.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
